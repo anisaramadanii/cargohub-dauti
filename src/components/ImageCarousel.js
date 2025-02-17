@@ -1,3 +1,95 @@
+// import React from "react";
+// import Slider from "react-slick";
+// import { Box } from "@mui/material";
+// import foto1 from "../images/foto1.jpg";
+// import foto2 from "../images/foto2.jpg";
+// import foto3 from "../images/foto3.jpg";
+// import foto4 from "../images/foto4.jpg";
+// import foto5 from "../images/foto5.jpg";
+
+// function PrevArrow(props) {
+//   const { className, onClick } = props;
+//   return (
+//     <div
+//       className={className}
+//       onClick={onClick}
+//       style={{
+//         display: "block",
+//         position: "absolute",
+//         left: "10px",
+//         zIndex: 2,
+//         fontSize: "40px",
+//         cursor: "pointer",
+//         color: "#333",
+//       }}
+//     ></div>
+//   );
+// }
+
+// function NextArrow(props) {
+//   const { className, onClick } = props;
+//   return (
+//     <div
+//       className={className}
+//       onClick={onClick}
+//       style={{
+//         display: "block",
+//         position: "absolute",
+//         right: "90px",
+//         zIndex: 2,
+//         fontSize: "40px",
+//         cursor: "pointer",
+//         color: "#333",
+//       }}
+//     ></div>
+//   );
+// }
+
+// const sliderSettings = {
+//   dots: true,
+//   infinite: true,
+//   speed: 500,
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   autoplay: true,
+//   autoplaySpeed: 2000,
+//   centerMode: true,
+//   centerPadding: "0",
+//   prevArrow: <PrevArrow />,
+//   nextArrow: <NextArrow />,
+// };
+
+// export default function ImageCarousel() {
+//   return (
+//     <Box
+//       sx={{
+//         width: "90%",
+//         height: "800px",
+//         margin: "0 auto",
+//         marginTop: 6,
+//         overflow: "hidden",
+//         position: "relative",
+//       }}
+//     >
+//       <Slider {...sliderSettings}>
+//         {[foto1, foto2, foto3, foto4, foto5].map((foto, index) => (
+//           <div key={index}>
+//             <img
+//               src={foto}
+//               alt={`Foto ${index + 1}`}
+//               style={{
+//                 width: "100%",
+//                 borderRadius: "8px",
+//                 objectFit: "cover",
+//                 height: "600px",
+//               }}
+//             />
+//           </div>
+//         ))}
+//       </Slider>
+//     </Box>
+//   );
+// }
 import React from "react";
 import Slider from "react-slick";
 import { Box } from "@mui/material";
@@ -21,6 +113,8 @@ function PrevArrow(props) {
         fontSize: "40px",
         cursor: "pointer",
         color: "#333",
+        top: "30%",
+        transform: "translateY(-50%)", // Adjust vertical position
       }}
     ></div>
   );
@@ -35,11 +129,13 @@ function NextArrow(props) {
       style={{
         display: "block",
         position: "absolute",
-        right: "90px",
+        right: "90px", // Adjusted for mobile
         zIndex: 2,
         fontSize: "40px",
         cursor: "pointer",
         color: "#333",
+        top: "30%",
+        transform: "translateY(-50%)", // Adjust vertical position
       }}
     ></div>
   );
@@ -64,7 +160,7 @@ export default function ImageCarousel() {
     <Box
       sx={{
         width: "90%",
-        height: "800px",
+        height: { xs: "300px", sm: "500px", md: "700px" }, // More adjusted for phone and laptop sizes
         margin: "0 auto",
         marginTop: 6,
         overflow: "hidden",
@@ -81,7 +177,7 @@ export default function ImageCarousel() {
                 width: "100%",
                 borderRadius: "8px",
                 objectFit: "cover",
-                height: "600px",
+                height: "100%", // Ensures responsive height adjustment
               }}
             />
           </div>
