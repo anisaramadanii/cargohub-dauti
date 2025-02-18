@@ -1,95 +1,3 @@
-// import React from "react";
-// import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
-// import { Link } from "react-router-dom";
-
-// export default function Navbar() {
-//   return (
-//     <AppBar
-//       position="fixed"
-//       color="primary"
-//       sx={{
-//         top: 0,
-//         width: "100%",
-//         zIndex: 1300,
-//       }}
-//     >
-//       <Toolbar>
-//         <Typography
-//           variant="h6"
-//           sx={{
-//             flexGrow: 4,
-//             whiteSpace: "nowrap",
-//             fontWeight: "bold",
-//             fontSize: "30px",
-//           }}
-//         >
-//           <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-//             CargoHub-Dauti
-//           </Link>
-//         </Typography>
-
-//         <Box
-//           style={{
-//             display: "flex",
-//             justifyContent: "flex-end",
-//             gap: "40px",
-//             fontSize: "30px",
-//             fontWeight: "9px",
-//           }}
-//         >
-//           <Link to="/home" style={{ textDecoration: "none" }}>
-//             <Button
-//               color="inherit"
-//               style={{
-//                 fontSize: "20px",
-//                 fontWeight: "bold",
-//                 color: "white",
-//               }}
-//             >
-//               Home
-//             </Button>
-//           </Link>
-//           <Link to="/about" style={{ textDecoration: "none" }}>
-//             <Button
-//               color="inherit"
-//               style={{
-//                 fontSize: "20px",
-//                 fontWeight: "bold",
-//                 color: "white",
-//               }}
-//             >
-//               About
-//             </Button>
-//           </Link>
-//           <Link to="/careers" style={{ textDecoration: "none" }}>
-//             <Button
-//               color="inherit"
-//               style={{
-//                 fontSize: "20px",
-//                 fontWeight: "bold",
-//                 color: "white",
-//               }}
-//             >
-//               Careers
-//             </Button>
-//           </Link>
-//           <Link to="/contact" style={{ textDecoration: "none" }}>
-//             <Button
-//               color="inherit"
-//               style={{
-//                 fontSize: "20px",
-//                 fontWeight: "bold",
-//                 color: "white",
-//               }}
-//             >
-//               Contact
-//             </Button>
-//           </Link>
-//         </Box>
-//       </Toolbar>
-//     </AppBar>
-//   );
-// }
 import React, { useState } from "react";
 import {
   AppBar,
@@ -129,7 +37,7 @@ export default function Navbar() {
             flexGrow: 4,
             whiteSpace: "nowrap",
             fontWeight: "bold",
-            fontSize: { xs: "20px", sm: "30px" }, // Responsive font size
+            fontSize: { xs: "20px", sm: "30px" },
           }}
         >
           <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
@@ -137,7 +45,6 @@ export default function Navbar() {
           </Link>
         </Typography>
 
-        {/* Hamburger Menu for Mobile */}
         <Box sx={{ display: { xs: "block", sm: "none" } }}>
           <IconButton
             edge="end"
@@ -149,10 +56,9 @@ export default function Navbar() {
           </IconButton>
         </Box>
 
-        {/* Desktop Navigation Links */}
         <Box
           sx={{
-            display: { xs: "none", sm: "flex" }, // Hide on small screens
+            display: { xs: "none", sm: "flex" },
             justifyContent: "flex-end",
             paddingRight: "40px",
             gap: "20px",
@@ -193,22 +99,24 @@ export default function Navbar() {
         </Box>
       </Toolbar>
 
-      {/* Mobile Drawer (Hamburger Menu) */}
       <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer}>
         <Box
           sx={{
             width: "200px",
-            paddingTop: "60px", // Shton hapësirë lart që butoni "Home" të duket mirë
+            paddingTop: "60px",
             display: "flex",
             flexDirection: "column",
-            alignItems: "flex-start", // Alinjon butonat majtas
+            alignItems: "flex-start",
             paddingLeft: "15px",
           }}
           role="presentation"
         >
           <List>
             <ListItem sx={{ padding: "10px 0" }}>
-              <Link to="/home" style={{ textDecoration: "none", width: "100%" }}>
+              <Link
+                to="/home"
+                style={{ textDecoration: "none", width: "100%" }}
+              >
                 <Button
                   color="inherit"
                   sx={{
@@ -225,7 +133,10 @@ export default function Navbar() {
               </Link>
             </ListItem>
             <ListItem sx={{ padding: "10px 0" }}>
-              <Link to="/about" style={{ textDecoration: "none", width: "100%" }}>
+              <Link
+                to="/about"
+                style={{ textDecoration: "none", width: "100%" }}
+              >
                 <Button
                   color="inherit"
                   sx={{
@@ -242,7 +153,10 @@ export default function Navbar() {
               </Link>
             </ListItem>
             <ListItem sx={{ padding: "10px 0" }}>
-              <Link to="/careers" style={{ textDecoration: "none", width: "100%" }}>
+              <Link
+                to="/careers"
+                style={{ textDecoration: "none", width: "100%" }}
+              >
                 <Button
                   color="inherit"
                   sx={{
@@ -259,7 +173,10 @@ export default function Navbar() {
               </Link>
             </ListItem>
             <ListItem sx={{ padding: "10px 0" }}>
-              <Link to="/contact" style={{ textDecoration: "none", width: "100%" }}>
+              <Link
+                to="/contact"
+                style={{ textDecoration: "none", width: "100%" }}
+              >
                 <Button
                   color="inherit"
                   sx={{
