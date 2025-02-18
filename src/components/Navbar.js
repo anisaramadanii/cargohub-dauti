@@ -91,7 +91,17 @@
 //   );
 // }
 import React, { useState } from "react";
-import { AppBar, Toolbar, Typography, Button, Box, IconButton, Drawer, List, ListItem } from "@mui/material";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Button,
+  Box,
+  IconButton,
+  Drawer,
+  List,
+  ListItem,
+} from "@mui/material";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -178,22 +188,34 @@ export default function Navbar() {
           }}
         >
           <Link to="/home" style={{ textDecoration: "none" }}>
-            <Button color="inherit" sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}>
+            <Button
+              color="inherit"
+              sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
+            >
               Home
             </Button>
           </Link>
           <Link to="/about" style={{ textDecoration: "none" }}>
-            <Button color="inherit" sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}>
+            <Button
+              color="inherit"
+              sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
+            >
               About
             </Button>
           </Link>
           <Link to="/careers" style={{ textDecoration: "none" }}>
-            <Button color="inherit" sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}>
+            <Button
+              color="inherit"
+              sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
+            >
               Careers
             </Button>
           </Link>
           <Link to="/contact" style={{ textDecoration: "none" }}>
-            <Button color="inherit" sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}>
+            <Button
+              color="inherit"
+              sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
+            >
               Contact
             </Button>
           </Link>
