@@ -113,8 +113,8 @@ function PrevArrow(props) {
         fontSize: "40px",
         cursor: "pointer",
         color: "#333",
-        top: "30%",
-        transform: "translateY(-50%)", // Adjust vertical position
+        top: "45%",
+        transform: "translateY(-50%)",
       }}
     ></div>
   );
@@ -129,13 +129,13 @@ function NextArrow(props) {
       style={{
         display: "block",
         position: "absolute",
-        right: "90px", // Adjusted for mobile
+        right: "90px",
         zIndex: 2,
         fontSize: "40px",
         cursor: "pointer",
         color: "#333",
-        top: "30%",
-        transform: "translateY(-50%)", // Adjust vertical position
+        top: "45%",
+        transform: "translateY(-50%)",
       }}
     ></div>
   );
@@ -160,7 +160,7 @@ export default function ImageCarousel() {
     <Box
       sx={{
         width: "90%",
-        height: { xs: "300px", sm: "500px", md: "700px" }, // More adjusted for phone and laptop sizes
+        height: { xs: "300px", sm: "500px", md: "700px" },
         margin: "0 auto",
         marginTop: 6,
         overflow: "hidden",
@@ -169,18 +169,26 @@ export default function ImageCarousel() {
     >
       <Slider {...sliderSettings}>
         {[foto1, foto2, foto3, foto4, foto5].map((foto, index) => (
-          <div key={index}>
+          <Box
+            key={index}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              height: { xs: "300px", sm: "500px", md: "700px" }, 
+            }}
+          >
             <img
               src={foto}
               alt={`Foto ${index + 1}`}
               style={{
                 width: "100%",
+                height: "100%",
+                objectFit: "cover", 
                 borderRadius: "8px",
-                objectFit: "cover",
-                height: "100%", // Ensures responsive height adjustment
               }}
             />
-          </div>
+          </Box>
         ))}
       </Slider>
     </Box>

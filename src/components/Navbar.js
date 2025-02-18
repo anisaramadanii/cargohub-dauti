@@ -112,33 +112,6 @@ export default function Navbar() {
     setDrawerOpen(!drawerOpen);
   };
 
-  const menuItems = (
-    <>
-      <List>
-        <ListItem>
-          <Link to="/home" style={{ textDecoration: "none" }}>
-            <Button color="inherit">Home</Button>
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link to="/about" style={{ textDecoration: "none" }}>
-            <Button color="inherit">About</Button>
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link to="/careers" style={{ textDecoration: "none" }}>
-            <Button color="inherit">Careers</Button>
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link to="/contact" style={{ textDecoration: "none" }}>
-            <Button color="inherit">Contact</Button>
-          </Link>
-        </ListItem>
-      </List>
-    </>
-  );
-
   return (
     <AppBar
       position="fixed"
@@ -183,8 +156,6 @@ export default function Navbar() {
             justifyContent: "flex-end",
             paddingRight: "40px",
             gap: "20px",
-            fontSize: "30px",
-            fontWeight: "9px",
           }}
         >
           <Link to="/home" style={{ textDecoration: "none" }}>
@@ -226,12 +197,85 @@ export default function Navbar() {
       <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer}>
         <Box
           sx={{
-            width: "250px",
-            paddingTop: "20px",
+            width: "200px",
+            paddingTop: "60px", // Shton hapësirë lart që butoni "Home" të duket mirë
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start", // Alinjon butonat majtas
+            paddingLeft: "15px",
           }}
           role="presentation"
         >
-          {menuItems}
+          <List>
+            <ListItem sx={{ padding: "10px 0" }}>
+              <Link to="/home" style={{ textDecoration: "none", width: "100%" }}>
+                <Button
+                  color="inherit"
+                  sx={{
+                    fontSize: "18px",
+                    fontWeight: "bold",
+                    justifyContent: "flex-start",
+                    textAlign: "left",
+                    width: "100%",
+                  }}
+                  onClick={toggleDrawer}
+                >
+                  Home
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem sx={{ padding: "10px 0" }}>
+              <Link to="/about" style={{ textDecoration: "none", width: "100%" }}>
+                <Button
+                  color="inherit"
+                  sx={{
+                    fontSize: "18px",
+                    fontWeight: "bold",
+                    justifyContent: "flex-start",
+                    textAlign: "left",
+                    width: "100%",
+                  }}
+                  onClick={toggleDrawer}
+                >
+                  About
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem sx={{ padding: "10px 0" }}>
+              <Link to="/careers" style={{ textDecoration: "none", width: "100%" }}>
+                <Button
+                  color="inherit"
+                  sx={{
+                    fontSize: "18px",
+                    fontWeight: "bold",
+                    justifyContent: "flex-start",
+                    textAlign: "left",
+                    width: "100%",
+                  }}
+                  onClick={toggleDrawer}
+                >
+                  Careers
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem sx={{ padding: "10px 0" }}>
+              <Link to="/contact" style={{ textDecoration: "none", width: "100%" }}>
+                <Button
+                  color="inherit"
+                  sx={{
+                    fontSize: "18px",
+                    fontWeight: "bold",
+                    justifyContent: "flex-start",
+                    textAlign: "left",
+                    width: "100%",
+                  }}
+                  onClick={toggleDrawer}
+                >
+                  Contact
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Box>
       </Drawer>
     </AppBar>
