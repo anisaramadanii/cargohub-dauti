@@ -8,7 +8,6 @@ import { Box, Typography } from "@mui/material";
 export default function Home() {
   return (
     <div>
-
       <Box
         id="home-section"
         sx={{
@@ -20,15 +19,15 @@ export default function Home() {
           variant="h3"
           sx={{
             marginTop: "30px",
-            color: "white",
+            color: "#CADCFC",
             fontWeight: "bold",
             fontSize: { xs: "28px", sm: "35px", md: "40px" },
             display: "inline-block",
-            backgroundColor: "#1e90ff",
-            padding: { xs: "3px", sm: "5px" }, 
+            backgroundColor: "#00246B",
+            padding: { xs: "3px", sm: "5px" },
           }}
         >
-          Welcome to CargoHub Dauti
+          Connecting Your Cargo with Precision and Care
         </Typography>
       </Box>
       <ImageCarousel />
@@ -37,11 +36,9 @@ export default function Home() {
         <About />
       </Box>
 
-
       <Box id="careers-section" sx={{ paddingTop: { xs: "50px", md: "80px" } }}>
         <Careers />
       </Box>
-
 
       <Box id="contact-section" sx={{ paddingTop: { xs: "50px", md: "80px" } }}>
         <Contact />

@@ -5,7 +5,7 @@ import foto1 from "../images/foto1.jpg";
 import foto2 from "../images/foto2.jpg";
 import foto3 from "../images/foto3.jpg";
 import foto4 from "../images/foto4.jpg";
-import foto5 from "../images/foto5.jpg";
+import ourexperience from "../images/our-experience.jpg";
 
 function PrevArrow(props) {
   const { className, onClick } = props;
@@ -76,14 +76,14 @@ export default function ImageCarousel() {
       }}
     >
       <Slider {...sliderSettings}>
-        {[foto1, foto2, foto3, foto4, foto5].map((foto, index) => (
+        {[foto1, foto2, foto3, foto4, ourexperience].map((foto, index) => (
           <Box
             key={index}
             sx={{
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              height: { xs: "300px", sm: "500px", md: "700px" }, 
+              height: { xs: "300px", sm: "500px", md: "700px" },
             }}
           >
             <img
@@ -92,7 +92,7 @@ export default function ImageCarousel() {
               style={{
                 width: "100%",
                 height: "100%",
-                objectFit: "cover", 
+                objectFit: "cover",
                 borderRadius: "8px",
               }}
             />

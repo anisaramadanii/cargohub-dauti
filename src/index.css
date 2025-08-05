@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    background: linear-gradient(160deg, #cfd6e3, #63a9d2) !important;
+    background: linear-gradient(160deg, #abbad5, #849ecb) ;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -16,7 +16,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-/* Shtoni këto stile për Carousel */
+
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 .slick-prev::before,
@@ -34,3 +34,4 @@ code {
     transform: translateY(0);
   }
 }
+

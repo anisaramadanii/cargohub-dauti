@@ -5,13 +5,18 @@ import { motion } from "framer-motion";
 import { useNavigate, useLocation } from "react-router-dom";
 import logo from "../images/logo.jpg";
 import director from "../images/director.jpg";
+import director2 from "../images/director2.jpg";
 
+
+
+  
 export default function Careers() {
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showBanner, setShowBanner] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+
 
   useEffect(() => {
     axios
@@ -69,28 +74,35 @@ export default function Careers() {
   }, [jobs, showBanner]);
 
   const handleApplyNow = () => {
-    navigate("/contact");
+    navigate("/your-information");
   };
 
   return (
     <Box
       sx={{
-        padding: { xs: "20px", md: "50px" },
-        marginTop: "50px",
-        paddingBottom: "50px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "space-between",
+        padding: "40px",
+        borderRadius: "8px",
+        transition: "all 0.3s ease",
+        textAlign: "center",
+        height: "100%",
+        minHeight: "300px",
       }}
     >
-        <hr
-        style={{ marginBottom: "100px", color: "white", marginTop: "-75px" }}
+      <hr
+        style={{ marginBottom: "100px", marginTop: "-65px", width: "100%" }}
       />
       <Typography
         variant="h4"
         gutterBottom
         sx={{
           textAlign: "center",
-          marginBottom: "50px",
+          paddingTop: "15px",
           fontWeight: "bold",
-          color: "rgba(29, 39, 51, 0.86)",
+          paddingBottom: "50px",
           fontSize: { xs: "24px", md: "32px" },
         }}
       >
@@ -132,15 +144,29 @@ export default function Careers() {
                       marginBottom: "10px",
                     }}
                   />
-                  <Typography variant="h6" color="primary" sx={{ fontWeight: "bold" }}>
+                  <Typography
+                    variant="h6"
+                    style={{ color: "#00246B" }}
+                    sx={{ fontWeight: "bold" }}
+                  >
                     {job.title}
                   </Typography>
-                  <Typography variant="body1" sx={{ marginBottom: "1rem" }}>
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      marginBottom: "1rem",
+                      display: "-webkit-box",
+                      WebkitBoxOrient: "vertical",
+                      WebkitLineClamp: 4,
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                    }}
+                  >
                     {job.body}
                   </Typography>
                   <Button
                     variant="contained"
-                    color="secondary"
+                    style={{ backgroundColor: "#B22222" }}
                     sx={{ marginTop: "1rem" }}
                     onClick={handleApplyNow}
                   >
@@ -163,8 +189,9 @@ export default function Careers() {
             sx={{
               display: "flex",
               flexDirection: { xs: "column", md: "row" },
+              justifyContent: "space-between",
               alignItems: "center",
-              backgroundColor: "rgb(37, 54, 73)",
+              backgroundColor: "rgb(37, 51, 69)",
               color: "white",
               textAlign: { xs: "center", md: "left" },
               marginTop: "50px",
@@ -181,23 +208,36 @@ export default function Careers() {
                 alt="Job banner"
                 style={{
                   borderRadius: "10px",
-                  width: "150px",
-                  height: "150px",
+                  width: "170px",
+                  height: "170px",
                 }}
               />
+              <Typography
+                variant="body2"
+                sx={{
+                  marginTop: "10px",
+                  fontWeight: "bold",
+                  fontSize: "19px",
+                }}
+              >
+                Irfan Ramadani
+              </Typography>
             </Box>
 
             <Box
               sx={{
-                flex: 1,
-                paddingLeft: { md: "30px" },
+                flex: 2,
+                paddingLeft: { md: "20px" },
                 textAlign: { xs: "center", md: "left" },
               }}
             >
               <Typography variant="h6" sx={{ fontWeight: "bold" }}>
                 Looking for new career opportunities?
               </Typography>
-              <Typography variant="body1" sx={{ marginTop: "5px", fontWeight: "bold" }}>
+              <Typography
+                variant="body1"
+                sx={{ marginTop: "5px", fontWeight: "bold" }}
+              >
                 Contact us at{" "}
                 <strong
                   style={{
@@ -205,10 +245,83 @@ export default function Careers() {
                     textDecoration: "underline",
                     textDecorationColor: "white",
                     textDecorationThickness: "2px",
-                    fontSize: "18px"
+                    fontSize: "18px",
                   }}
                 >
                   +389 70-245-233
+                </strong>{" "}
+                for more job positions.
+              </Typography>
+            </Box>
+          </Box>
+        )}
+
+      {showBanner &&
+        (location.pathname === "/" || location.pathname === "/careers") && (
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: { xs: "column", md: "row" },
+              justifyContent: "space-between",
+              alignItems: "center",
+              backgroundColor: "rgb(37, 51, 69)",
+              color: "white",
+              textAlign: { xs: "center", md: "left" },
+              marginTop: "50px",
+              borderRadius: "10px",
+              padding: "30px",
+              boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+              maxWidth: "900px",
+              mx: "auto",
+            }}
+          >
+            <Box sx={{ mb: { xs: "10px", md: "0" } }}>
+              <img
+                src={director2}
+                alt="Job banner"
+                style={{
+                  borderRadius: "10px",
+                  width: "170px",
+                  height: "170px",
+                }}
+              />
+              <Typography
+                variant="body2"
+                sx={{
+                  marginTop: "10px",
+                  fontWeight: "bold",
+                  fontSize: "19px",
+                }}
+              >
+                Daim Ramadani
+              </Typography>
+            </Box>
+
+            <Box
+              sx={{
+                flex: 2,
+                paddingLeft: { md: "20px" },
+                textAlign: { xs: "center", md: "left" },
+              }}
+            >
+              <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+                Looking for new career opportunities?
+              </Typography>
+              <Typography
+                variant="body1"
+                sx={{ marginTop: "5px", fontWeight: "bold" }}
+              >
+                Contact us at{" "}
+                <strong
+                  style={{
+                    color: "rgba(93, 158, 233, 0.86)",
+                    textDecoration: "underline",
+                    textDecorationColor: "white",
+                    textDecorationThickness: "2px",
+                    fontSize: "18px",
+                  }}
+                >
+                  +389 70-226-780
                 </strong>{" "}
                 for more job positions.
               </Typography>

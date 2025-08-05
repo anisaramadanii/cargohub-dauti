@@ -7,11 +7,12 @@ export default function Contact() {
       id="contact-section"
       sx={{
         padding: { xs: "3rem", sm: "7rem" },
-        backgroundColor: "#1A237E",
+        backgroundColor: "#2C3E50",
       }}
     >
       <Typography
         variant="h4"
+        style={{ paddingTop: "20px", marginBottom: "7 0px" }}
         sx={{
           textAlign: "center",
           mb: 5,
@@ -168,7 +169,7 @@ export default function Contact() {
         id="contact-section"
         sx={{
           paddingTop: { xs: "2rem", sm: "3rem" },
-          backgroundColor: "#1A237E",
+          backgroundColor: "#2C3E50",
         }}
       >
         <Grid container spacing={3} justifyContent="center">
@@ -320,7 +321,7 @@ export default function Contact() {
         id="contact-section"
         sx={{
           paddingTop: { xs: "2rem", sm: "3rem" },
-          backgroundColor: "#1A237E",
+          backgroundColor: "#2C3E50",
         }}
       >
         <Grid container spacing={3} justifyContent="center">
@@ -473,7 +474,7 @@ export default function Contact() {
         id="contact-section"
         sx={{
           paddingTop: { xs: "2rem", sm: "3rem" },
-          backgroundColor: "#1A237E",
+          backgroundColor: "#2C3E50",
         }}
       >
         <Grid container spacing={3} justifyContent="center">
@@ -626,7 +627,7 @@ export default function Contact() {
         id="contact-section"
         sx={{
           paddingTop: { xs: "2rem", sm: "3rem" },
-          backgroundColor: "#1A237E",
+          backgroundColor: "#2C3E50",
         }}
       >
         <Grid container spacing={3} justifyContent="center">
@@ -779,7 +780,7 @@ export default function Contact() {
         id="contact-section"
         sx={{
           paddingTop: { xs: "2rem", sm: "3rem" },
-          backgroundColor: "#1A237E",
+          backgroundColor: "#2C3E50",
         }}
       >
         <Grid container spacing={3} justifyContent="center">
@@ -932,7 +933,7 @@ export default function Contact() {
         id="contact-section"
         sx={{
           paddingTop: { xs: "2rem", sm: "3rem" },
-          backgroundColor: "#1A237E",
+          backgroundColor: "#2C3E50",
         }}
       >
         <Grid container spacing={3} justifyContent="center">

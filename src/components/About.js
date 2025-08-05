@@ -49,7 +49,7 @@ export default function About() {
         variant="subtitle1"
         align="center"
         gutterBottom
-        style={{ fontSize: isMobile ? "16px" : "20px" }}
+        style={{ fontSize: isMobile ? "16px" : "20px", color:"black" }}
       >
         "We offer transportation and logistics services with high standards for our clients."
       </Typography>

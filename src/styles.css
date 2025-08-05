@@ -1,0 +1,56 @@
+.prev-arrow, .next-arrow {
+    font-size: 10px;
+    color: #333;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  
+  .prev-arrow {
+    left: 10px;
+  }
+  
+  .next-arrow {
+    right: 10px;
+  }
+  
+
+  @media (max-width: 600px) {
+    .prev-arrow, .next-arrow {
+      font-size: 15px; 
+    }
+  
+    .prev-arrow {
+      left: 5px; 
+    }
+  
+    .next-arrow {
+      right: 5px; 
+    }
+  }
+  
+
+  @media (min-width: 800px) and (max-width: 1366px) {
+    .prev-arrow, .next-arrow {
+      font-size: 35px; 
+    }
+  
+    .prev-arrow {
+      left: 20px; 
+    }
+  
+    .next-arrow {
+      right: 20px;
+    }
+  }
+  @keyframes moveText {
+  0% {
+    transform: translateX(-100%); 
+  }
+  100% {
+    transform: translateX(100%); 
+  }
+}
+  

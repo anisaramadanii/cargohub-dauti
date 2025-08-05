@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5b6d9531.css",
+    "main.js": "/static/js/main.7510a362.js",
+    "static/js/488.0d0c4c3a.chunk.js": "/static/js/488.0d0c4c3a.chunk.js",
+    "static/media/customer-service.jpg": "/static/media/customer-service.68eded871c767887ea99.jpg",
+    "static/media/our-experience.jpg": "/static/media/our-experience.a9215104ede2261a852a.jpg",
+    "static/media/foto2.jpg": "/static/media/foto2.60bbf230e80b9809869a.jpg",
+    "static/media/foto4.jpg": "/static/media/foto4.6210e58b3a8c97f52294.jpg",
+    "static/media/foto1.jpg": "/static/media/foto1.bababd714500dfa4918f.jpg",
+    "static/media/insurance.jpg": "/static/media/insurance.2ce8dc38d47f56adff2d.jpg",
+    "static/media/foto5.jpg": "/static/media/foto5.cb1bac94b6908e532a22.jpg",
+    "static/media/foto3.jpg": "/static/media/foto3.3aa645120dc13801e924.jpg",
+    "static/media/logo.jpg": "/static/media/logo.b2025c35f349542136f1.jpg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.5b6d9531.css.map": "/static/css/main.5b6d9531.css.map",
+    "main.7510a362.js.map": "/static/js/main.7510a362.js.map",
+    "488.0d0c4c3a.chunk.js.map": "/static/js/488.0d0c4c3a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b6d9531.css",
+    "static/js/main.7510a362.js"
+  ]
+}

@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <AppBar
       position="fixed"
-      color="primary"
+      style={{ backgroundColor: "#00246B"}}
       sx={{
         top: 0,
         width: "100%",
@@ -40,8 +40,8 @@ export default function Navbar() {
             fontSize: { xs: "20px", sm: "30px" },
           }}
         >
-          <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
-            CargoHub-Dauti
+          <Link to="/" style={{ textDecoration: "none", color:"#CADCFC" }}>
+            Dauti-TransportShped
           </Link>
         </Typography>
 
@@ -66,7 +66,7 @@ export default function Navbar() {
         >
           <Link to="/home" style={{ textDecoration: "none" }}>
             <Button
-              color="inherit"
+              style={{color:"#CADCFC",}}
               sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
             >
               Home
@@ -74,7 +74,7 @@ export default function Navbar() {
           </Link>
           <Link to="/about" style={{ textDecoration: "none" }}>
             <Button
-              color="inherit"
+              style={{color:"#CADCFC",}}
               sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
             >
               About
@@ -82,7 +82,7 @@ export default function Navbar() {
           </Link>
           <Link to="/careers" style={{ textDecoration: "none" }}>
             <Button
-              color="inherit"
+              style={{color:"#CADCFC",}}
               sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
             >
               Careers
@@ -90,7 +90,7 @@ export default function Navbar() {
           </Link>
           <Link to="/contact" style={{ textDecoration: "none" }}>
             <Button
-              color="inherit"
+              style={{color:"#CADCFC",}}
               sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
             >
               Contact
@@ -120,7 +120,7 @@ export default function Navbar() {
                 <Button
                   color="inherit"
                   sx={{
-                    fontSize: "18px",
+                    fontSize: "17px",
                     fontWeight: "bold",
                     justifyContent: "flex-start",
                     textAlign: "left",
@@ -140,7 +140,7 @@ export default function Navbar() {
                 <Button
                   color="inherit"
                   sx={{
-                    fontSize: "18px",
+                    fontSize: "17px",
                     fontWeight: "bold",
                     justifyContent: "flex-start",
                     textAlign: "left",
@@ -160,7 +160,7 @@ export default function Navbar() {
                 <Button
                   color="inherit"
                   sx={{
-                    fontSize: "18px",
+                    fontSize: "17px",
                     fontWeight: "bold",
                     justifyContent: "flex-start",
                     textAlign: "left",
@@ -180,7 +180,7 @@ export default function Navbar() {
                 <Button
                   color="inherit"
                   sx={{
-                    fontSize: "18px",
+                    fontSize: "17px",
                     fontWeight: "bold",
                     justifyContent: "flex-start",
                     textAlign: "left",
