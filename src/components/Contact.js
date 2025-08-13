@@ -1,7 +1,9 @@
 import { Box, Typography, Grid, Paper } from "@mui/material";
 import { Phone, Email, LocationOn } from "@mui/icons-material";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Contact() {
+  const { currentTranslations } = useLanguage();
   return (
     <Box
       id="contact-section"
@@ -21,7 +23,7 @@ export default function Contact() {
           marginBottom: { xs: "50px", sm: "90px" },
         }}
       >
-        Contact Information
+        {currentTranslations.contactInfo}
       </Typography>
 
       <Grid container spacing={3} justifyContent="center">
@@ -53,7 +55,7 @@ export default function Contact() {
                   fontSize: { xs: "18px", sm: "23px" },
                 }}
               >
-                Adress 1
+                {`${currentTranslations.address} 1`}
               </Typography>
             </Box>
 
@@ -200,7 +202,7 @@ export default function Contact() {
                     fontSize: { xs: "18px", sm: "23px" },
                   }}
                 >
-                  Adress 2
+                    {`${currentTranslations.address} 2`}
                 </Typography>
               </Box>
 
@@ -353,7 +355,7 @@ export default function Contact() {
                     fontSize: { xs: "18px", sm: "23px" },
                   }}
                 >
-                  Adress 3
+                  {`${currentTranslations.address} 3`}
                 </Typography>
               </Box>
 
@@ -506,7 +508,7 @@ export default function Contact() {
                     fontSize: { xs: "18px", sm: "23px" },
                   }}
                 >
-                  Adress 4
+                  {`${currentTranslations.address} 4`}
                 </Typography>
               </Box>
 
@@ -659,7 +661,7 @@ export default function Contact() {
                     fontSize: { xs: "18px", sm: "23px" },
                   }}
                 >
-                  Adress 5
+                  {`${currentTranslations.address} 5`}
                 </Typography>
               </Box>
 
@@ -812,7 +814,7 @@ export default function Contact() {
                     fontSize: { xs: "18px", sm: "23px" },
                   }}
                 >
-                  Adress 6
+                {`${currentTranslations.address} 6`}
                 </Typography>
               </Box>
 
@@ -965,7 +967,7 @@ export default function Contact() {
                     fontSize: { xs: "18px", sm: "23px" },
                   }}
                 >
-                  Adress 7
+                  {`${currentTranslations.address} 7`}
                 </Typography>
               </Box>
 

@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Typography, Button, TextField, Container, Box } from "@mui/material";
 import emailjs from "@emailjs/browser";
+import { useLanguage } from "../contexts/LanguageContext";
 
 const YourInformation = () => {
+  const { currentTranslations } = useLanguage();
   const [form, setForm] = useState({
     name: "",
     surname: "",
@@ -73,17 +75,17 @@ const YourInformation = () => {
             variant="h4"
             sx={{ fontWeight: "bold", marginBottom: "20px", color: "#00246B" }}
           >
-            Your Information
+            {currentTranslations.yourInformation || "Your Information"}
           </Typography>
           {isSent ? (
             <Typography variant="h6" sx={{ color: "green", marginBottom: "20px" }}>
-              Message Sent Successfully!
+              {currentTranslations.messageSent}
             </Typography>
           ) : (
             <form onSubmit={handleSubmit}>
               <TextField
                 fullWidth
-                label="Name"
+                label={currentTranslations.name}
                 variant="outlined"
                 name="name"
                 value={form.name}

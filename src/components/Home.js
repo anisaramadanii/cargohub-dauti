@@ -4,8 +4,11 @@ import About from "./About";
 import Careers from "./Careers";
 import Contact from "./Contact";
 import { Box, Typography } from "@mui/material";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Home() {
+  const { currentTranslations } = useLanguage();
+
   return (
     <div>
       <Box
@@ -27,7 +30,7 @@ export default function Home() {
             padding: { xs: "3px", sm: "5px" },
           }}
         >
-          Connecting Your Cargo with Precision and Care
+          {currentTranslations.homeTitle}
         </Typography>
       </Box>
       <ImageCarousel />

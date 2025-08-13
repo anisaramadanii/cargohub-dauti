@@ -12,13 +12,88 @@ import {
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
+import { useLanguage } from "../contexts/LanguageContext";
 
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const { selectedLanguage, handleLanguageChange, currentTranslations } = useLanguage();
 
   const toggleDrawer = () => {
     setDrawerOpen(!drawerOpen);
   };
+
+  const LanguageSelector = () => (
+    <Box
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        gap: "8px",
+        color: "#CADCFC",
+        fontSize: "16px",
+        fontWeight: "bold",
+      }}
+    >
+      <Button
+        onClick={() => handleLanguageChange("MK")}
+        sx={{
+          color: selectedLanguage === "MK" ? "#ffffff" : "#CADCFC",
+          minWidth: "auto",
+          padding: "4px 8px",
+          fontSize: "16px",
+          fontWeight: "bold",
+          "&:hover": {
+            backgroundColor: "rgba(255, 255, 255, 0.1)",
+          },
+        }}
+      >
+        MK
+      </Button>
+      <Box
+        sx={{
+          width: "1px",
+          height: "20px",
+          backgroundColor: "#CADCFC",
+        }}
+      />
+      <Button
+        onClick={() => handleLanguageChange("AL")}
+        sx={{
+          color: selectedLanguage === "AL" ? "#ffffff" : "#CADCFC",
+          minWidth: "auto",
+          padding: "4px 8px",
+          fontSize: "16px",
+          fontWeight: "bold",
+          "&:hover": {
+            backgroundColor: "rgba(255, 255, 255, 0.1)",
+          },
+        }}
+      >
+        AL
+      </Button>
+      <Box
+        sx={{
+          width: "1px",
+          height: "20px",
+          backgroundColor: "#CADCFC",
+        }}
+      />
+      <Button
+        onClick={() => handleLanguageChange("EN")}
+        sx={{
+          color: selectedLanguage === "EN" ? "#ffffff" : "#CADCFC",
+          minWidth: "auto",
+          padding: "4px 8px",
+          fontSize: "16px",
+          fontWeight: "bold",
+          "&:hover": {
+            backgroundColor: "rgba(255, 255, 255, 0.1)",
+          },
+        }}
+      >
+        EN
+      </Button>
+    </Box>
+  );
 
   return (
     <AppBar
@@ -41,7 +116,7 @@ export default function Navbar() {
           }}
         >
           <Link to="/" style={{ textDecoration: "none", color:"#CADCFC" }}>
-            Dauti-TransportShped
+            {currentTranslations.companyName}
           </Link>
         </Typography>
 
@@ -60,8 +135,9 @@ export default function Navbar() {
           sx={{
             display: { xs: "none", sm: "flex" },
             justifyContent: "flex-end",
-            paddingRight: "40px",
+            alignItems: "center",
             gap: "20px",
+            flexGrow: 1,
           }}
         >
           <Link to="/home" style={{ textDecoration: "none" }}>
@@ -69,7 +145,7 @@ export default function Navbar() {
               style={{color:"#CADCFC",}}
               sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
             >
-              Home
+              {currentTranslations.home}
             </Button>
           </Link>
           <Link to="/about" style={{ textDecoration: "none" }}>
@@ -77,7 +153,7 @@ export default function Navbar() {
               style={{color:"#CADCFC",}}
               sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
             >
-              About
+              {currentTranslations.about}
             </Button>
           </Link>
           <Link to="/careers" style={{ textDecoration: "none" }}>
@@ -85,7 +161,7 @@ export default function Navbar() {
               style={{color:"#CADCFC",}}
               sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
             >
-              Careers
+              {currentTranslations.activities}
             </Button>
           </Link>
           <Link to="/contact" style={{ textDecoration: "none" }}>
@@ -93,9 +169,12 @@ export default function Navbar() {
               style={{color:"#CADCFC",}}
               sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
             >
-              Contact
+              {currentTranslations.contact}
             </Button>
           </Link>
+          
+          {/* Language Selector */}
+          <LanguageSelector />
         </Box>
       </Toolbar>
 
@@ -128,7 +207,7 @@ export default function Navbar() {
                   }}
                   onClick={toggleDrawer}
                 >
-                  Home
+                  {currentTranslations.home}
                 </Button>
               </Link>
             </ListItem>
@@ -148,7 +227,7 @@ export default function Navbar() {
                   }}
                   onClick={toggleDrawer}
                 >
-                  About
+                  {currentTranslations.about}
                 </Button>
               </Link>
             </ListItem>
@@ -168,7 +247,7 @@ export default function Navbar() {
                   }}
                   onClick={toggleDrawer}
                 >
-                  Careers
+                  {currentTranslations.activities}
                 </Button>
               </Link>
             </ListItem>
@@ -188,7 +267,7 @@ export default function Navbar() {
                   }}
                   onClick={toggleDrawer}
                 >
-                  Contact
+                  {currentTranslations.contact}
                 </Button>
               </Link>
             </ListItem>
