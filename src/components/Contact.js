@@ -2,6 +2,10 @@ import { Box, Typography, Grid, Paper, IconButton } from "@mui/material";
 import { Phone, Email, LocationOn } from "@mui/icons-material";
 import { useLanguage } from "../contexts/LanguageContext";
 import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
+import logo from "../images/logo-dauti3.jpg";
+import ISO from "../images/logo-iso-standard.jpg";
+import AEO from "../images/AEO.jpg";
+
 
 export default function Contact() {
   const { currentTranslations } = useLanguage();
@@ -1118,7 +1122,44 @@ export default function Contact() {
         >
           <LinkedIn sx={{ fontSize: 50 }} />
         </IconButton>
+
+
       </Box>
+  <Box
+  sx={{
+    display: "flex",
+    flexDirection: "row", 
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 4, 
+    marginBottom: -10,   
+    gap: 2
+  }}
+>
+   <Box
+    component="img"
+    src={AEO}
+    alt="Photo 2"
+    sx={{ width: 100, height: 100, cursor: "pointer" }}
+    onClick={() => window.open("https://example.com/photo2", "_blank")}
+  />
+  <Box
+    component="img"
+    src={ISO}
+    alt="Photo 1"
+    sx={{ width: 100, height: 100, cursor: "pointer" }}
+    onClick={() => window.open("https://example.com/photo1", "_blank")}
+  />
+  <Box
+    component="img"
+    src={logo}
+    alt="Photo 2"
+    sx={{ width: 500, height: 100, cursor: "pointer" }}
+    onClick={() => window.open("https://example.com/photo2", "_blank")}
+  />
+  
+</Box>
     </Box>
+    
   );
 }
