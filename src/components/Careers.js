@@ -150,8 +150,6 @@ export default function Careers() {
       ) : (
         <Typography>{currentTranslations.noOpenings}</Typography>
       )}
-
-      {/* Kartat e drejtorëve */}
       <Grid
         container
         spacing={4}

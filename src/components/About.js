@@ -88,7 +88,7 @@ export default function About() {
               <Card
                 style={{
                   width: isMobile ? "100%" : "400px",
-                  height: isMobile ? "auto" : "550px", // më e vogël
+                  height: isMobile ? "auto" : "550px", 
                   margin: "auto",
                   display: "flex",
                   flexDirection: "column",
@@ -97,7 +97,7 @@ export default function About() {
               >
                 <CardMedia
                   component="img"
-                  height={isMobile ? "220px" : "250px"} // pak më e vogël
+                  height={isMobile ? "220px" : "250px"} 
                   image={card.image}
                   alt={card.title}
                   style={{ flexShrink: 0, objectFit: "cover" }}

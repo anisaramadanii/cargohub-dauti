@@ -1,6 +1,7 @@
-import { Box, Typography, Grid, Paper } from "@mui/material";
+import { Box, Typography, Grid, Paper, IconButton } from "@mui/material";
 import { Phone, Email, LocationOn } from "@mui/icons-material";
 import { useLanguage } from "../contexts/LanguageContext";
+import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
 
 export default function Contact() {
   const { currentTranslations } = useLanguage();
@@ -202,7 +203,7 @@ export default function Contact() {
                     fontSize: { xs: "18px", sm: "23px" },
                   }}
                 >
-                    {`${currentTranslations.address} 2`}
+                  {`${currentTranslations.address} 2`}
                 </Typography>
               </Box>
 
@@ -814,7 +815,7 @@ export default function Contact() {
                     fontSize: { xs: "18px", sm: "23px" },
                   }}
                 >
-                {`${currentTranslations.address} 6`}
+                  {`${currentTranslations.address} 6`}
                 </Typography>
               </Box>
 
@@ -1081,6 +1082,42 @@ export default function Contact() {
             </Paper>
           </Grid>
         </Grid>
+      </Box>
+      <Box sx={{ display: "flex", justifyContent: "center", gap: 4, mt: 6 }}>
+        <IconButton
+          color="primary"
+          onClick={() =>
+            window.open(
+              "https://www.facebook.com/search/top/?q=dauti%20transportshped",
+              "_blank"
+            )
+          }
+        >
+          <Facebook sx={{ fontSize: 50 }} />
+        </IconButton>
+
+        <IconButton
+          color="secondary"
+          onClick={() =>
+            window.open(
+              " https://www.instagram.com/dauti.transportshped/?hl=en ",
+              "_blank"
+            )
+          }
+        >
+          <Instagram sx={{ fontSize: 50 }} />
+        </IconButton>
+        <IconButton
+          color="info"
+          onClick={() =>
+            window.open(
+              "https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A101225650&keywords=dauti%20transportshped&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=947bb6bd-3010-48a9-beff-cac4e176c7b4&sid=0PN&spellCorrectionEnabled=true",
+              "_blank"
+            )
+          }
+        >
+          <LinkedIn sx={{ fontSize: 50 }} />
+        </IconButton>
       </Box>
     </Box>
   );
