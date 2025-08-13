@@ -85,22 +85,7 @@ const translations = {
     yourInformation: "Вашите информации",
 
     // Additional career translations
-    lookingForOpportunities: "Барате нови кариерни можности?",
-    contactForJobs: "Контактирајте нè на",
-    forMoreJobs: "за повеќе работни позиции.",
-    job1Desc:
-      "Логистички координатор: Управување со дневните операции за пратки, планирање на рути и осигурување оптимизација на трошоците.",
-    job2Desc:
-      "Специјалист за товарни превози: Координација на меѓународно движење на стоки и осигурување усогласеност со царинските прописи.",
-    job3Desc:
-      "Менаџер на флота: Надгледување на одржување на возилата и осигурување оперативна ефикасност.",
-    job4Desc:
-      "Представник за клиентска услуга - Логистика: Поддршка на клиентите за време на процесот на испорака и решавање проблеми.",
-    job5Desc:
-      "Супервизор на магацин: Управување со дневните операции на магацин, залихи и координација на тимот.",
-    job6Desc:
-      "Аналитичар за оптимизација на рути: Анализа на рути за испорака за подобрување на трошоците и временската ефикасност.",
-    noDescription: "Нема достапно опишување.",
+ 
   },
 
   AL: {
@@ -184,22 +169,7 @@ const translations = {
     yourInformation: "Informacionet tuaja",
 
     // Additional career translations
-    lookingForOpportunities: "Duke kërkuar mundësi të reja karriere?",
-    contactForJobs: "Na kontaktoni në",
-    forMoreJobs: "për më shumë pozicione pune.",
-    job1Desc:
-      "Koordinues i Logjistikës: Menaxhimi i operacioneve ditore të dërgesave, planifikimi i rrugëve dhe sigurimi i optimizimit të kostove.",
-    job2Desc:
-      "Specialist i Transportit të Mallrave: Koordinimi i lëvizjes ndërkombëtare të mallrave dhe sigurimi i përputhshmërisë doganore.",
-    job3Desc:
-      "Menaxher i Flotës: Mbikëqyrja e mirëmbajtjes së flotës së automjeteve dhe sigurimi i efikasitetit operacional.",
-    job4Desc:
-      "Përfaqësues i Shërbimit ndaj Klientit - Logjistikë: Mbështetja e klientëve gjatë procesit të transportit dhe zgjidhja e problemeve.",
-    job5Desc:
-      "Supervizor i Depove: Menaxhimi i operacioneve ditore të depove, inventarit dhe koordinimit të ekipit.",
-    job6Desc:
-      "Analist i Optimizimit të Rrugëve: Analiza e rrugëve të dërgesave për të përmirësuar efikasitetin e kostove dhe kohës.",
-    noDescription: "Nuk ka përshkrim të disponueshëm.",
+   
   },
 
   EN: {
@@ -281,22 +251,7 @@ const translations = {
     yourInformation: "Your Information",
 
     // Additional career translations
-    lookingForOpportunities: "Looking for new career opportunities?",
-    contactForJobs: "Contact us at",
-    forMoreJobs: "for more job positions.",
-    job1Desc:
-      "Logistics Coordinator: Manage daily shipment operations, route planning, and ensure cost optimization.",
-    job2Desc:
-      "Freight Forwarding Specialist: Coordinate international movement of goods and ensure customs compliance.",
-    job3Desc:
-      "Fleet Manager: Oversee vehicle fleet maintenance and ensure operational efficiency.",
-    job4Desc:
-      "Customer Service Representative - Logistics: Support clients during the shipping process and resolve issues.",
-    job5Desc:
-      "Warehouse Supervisor: Manage daily warehouse operations, inventory, and team coordination.",
-    job6Desc:
-      "Route Optimization Analyst: Analyze delivery routes to improve cost and time efficiency.",
-    noDescription: "No description available.",
+
   },
 };
 

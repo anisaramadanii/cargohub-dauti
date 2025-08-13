@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Grid, Typography, Button, CircularProgress, Box } from "@mui/material";
 import { motion } from "framer-motion";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import logo from "../images/logo.jpg";
 import director from "../images/director.jpg";
 import director2 from "../images/director2.jpg";
@@ -14,7 +14,7 @@ export default function Careers() {
   const [loading, setLoading] = useState(true);
   const [showBanner, setShowBanner] = useState(false);
   const navigate = useNavigate();
-  const location = useLocation();
+
 
   useEffect(() => {
     axios

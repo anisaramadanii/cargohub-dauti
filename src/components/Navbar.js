@@ -13,10 +13,12 @@ import {
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useLanguage } from "../contexts/LanguageContext";
+import logo from "../images/logo.jpg";
 
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const { selectedLanguage, handleLanguageChange, currentTranslations } = useLanguage();
+  const { selectedLanguage, handleLanguageChange, currentTranslations } =
+    useLanguage();
 
   const toggleDrawer = () => {
     setDrawerOpen(!drawerOpen);
@@ -98,7 +100,7 @@ export default function Navbar() {
   return (
     <AppBar
       position="fixed"
-      style={{ backgroundColor: "#00246B"}}
+      style={{ backgroundColor: "#00246B" }}
       sx={{
         top: 0,
         width: "100%",
@@ -115,7 +117,20 @@ export default function Navbar() {
             fontSize: { xs: "20px", sm: "30px" },
           }}
         >
-          <Link to="/" style={{ textDecoration: "none", color:"#CADCFC" }}>
+          <Link
+            to="/"
+            style={{
+              textDecoration: "none",
+              color: "#CADCFC",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <img
+              src={logo}
+              alt="Company Logo"
+              style={{ height: "55px", marginRight: "10px" }}
+            />
             {currentTranslations.companyName}
           </Link>
         </Typography>
@@ -135,22 +150,27 @@ export default function Navbar() {
           sx={{
             display: { xs: "none", sm: "flex" },
             justifyContent: "flex-end",
+
             alignItems: "center",
             gap: "20px",
             flexGrow: 1,
           }}
         >
-          <Link to="/home" style={{ textDecoration: "none" }}>
+          <Link
+            to="/home"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
             <Button
-              style={{color:"#CADCFC",}}
+              style={{ color: "#CADCFC" }}
               sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
             >
               {currentTranslations.home}
             </Button>
           </Link>
+
           <Link to="/about" style={{ textDecoration: "none" }}>
             <Button
-              style={{color:"#CADCFC",}}
+              style={{ color: "#CADCFC" }}
               sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
             >
               {currentTranslations.about}
@@ -158,7 +178,7 @@ export default function Navbar() {
           </Link>
           <Link to="/careers" style={{ textDecoration: "none" }}>
             <Button
-              style={{color:"#CADCFC",}}
+              style={{ color: "#CADCFC" }}
               sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
             >
               {currentTranslations.activities}
@@ -166,13 +186,13 @@ export default function Navbar() {
           </Link>
           <Link to="/contact" style={{ textDecoration: "none" }}>
             <Button
-              style={{color:"#CADCFC",}}
+              style={{ color: "#CADCFC" }}
               sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
             >
               {currentTranslations.contact}
             </Button>
           </Link>
-          
+
           {/* Language Selector */}
           <LanguageSelector />
         </Box>

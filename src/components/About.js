@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardMedia, Typography, Grid, useMediaQuery } from "@mui/material";
 import experiencePhoto from "../images/our-experience.jpg";
-import insurance from "../images/insurance.jpg";
+import insurance from "../images/foto5.jpg";
 import customer from "../images/customer-service.jpg";
 import { motion } from "framer-motion";
 import { useLanguage } from "../contexts/LanguageContext";
@@ -18,7 +18,7 @@ export default function About() {
     },
     {
       title: currentTranslations.goodsSafety,
-      image: insurance,
+      image: insurance ,
       description: currentTranslations.goodsSafetyDesc,
     },
     {
