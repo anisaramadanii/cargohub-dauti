@@ -14,10 +14,19 @@ import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useLanguage } from "../contexts/LanguageContext";
 import logo from "../images/logo.jpg";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const { handleLanguageChange, currentTranslations } = useLanguage();
+
+  const navigate = useNavigate();
+
+  const handleNavClick = (path) => {
+    navigate(path);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setDrawerOpen(false);
+  };
 
   const toggleDrawer = () => {
     setDrawerOpen(!drawerOpen);
@@ -105,7 +114,7 @@ export default function Navbar() {
         zIndex: 1300,
       }}
     >
-      <Toolbar >
+      <Toolbar>
         <Typography
           variant="h6"
           sx={{
@@ -232,7 +241,11 @@ export default function Navbar() {
         </Box>
       </Toolbar>
 
-      <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer}>
+      <Drawer
+        anchor="right"
+        open={drawerOpen}
+        onClick={() => handleNavClick("/home")}
+      >
         <Box
           sx={{
             width: "200px",

@@ -6,7 +6,7 @@ const translations = {
   MK: {
     home: "ПОЧЕТНА",
     about: "ЗА НАС",
-    activities: "КАРИЕРИ",
+    activities: "НАШИОТ ТИМ",
     brands: "БРЕНДОВИ",
     catalogs: "КАТАЛОЗИ",
     news: "ВЕСТИ",
@@ -32,7 +32,7 @@ const translations = {
       "Нашиот посветен тим е ангажиран да нуди исклучителна поддршка и брзи решенија за нашите клиенти. Ние ставаме приоритет на задоволството на клиентите со обезбедување јасна комуникација, брзо решавање на проблемите и нудење прилагодена помош за задоволување на индивидуалните потреби. Со фокус на ефикасност и сигурност, осигуруваме дека секој клиент добива внимание и грижа што ги заслужува, помагајќи им да се движат низ сите предизвици со леснотија.",
 
     // Careers page
-    currentOpenings: "Достапни работни позиции",
+    currentOpenings: "Тимот зад нашиот успех",
     position: "Позиција",
     applyNow: "Аплицирај Сега",
     noOpenings: "Во моментов нема достапни позиции.",
@@ -88,7 +88,7 @@ const translations = {
   AL: {
     home: "KRYEFAQJA",
     about: "RRETH NESH",
-    activities: "KARRIERA",
+    activities: "EKIPI YNË",
     brands: "BRENDE",
     catalogs: "KATALOGE",
     news: "LAJME",
@@ -114,7 +114,7 @@ const translations = {
       "Ekipi ynë i dedikuar është i angazhuar për të ofruar mbështetje të jashtëzakonshme dhe zgjidhje të shpejta për klientët tanë. Ne japim prioritet kënaqësisë së klientit duke ofruar komunikim të qartë, duke adresuar shqetësimet në kohë dhe duke ofruar ndihmë të përshtatur për të plotësuar nevojat individuale. Me fokus në efikasitet dhe besueshmëri, ne sigurojmë që çdo klient të marrë vëmendjen dhe kujdesin që meriton, duke i ndihmuar ata të lundrojnë në çdo sfidë me lehtësi.",
 
     // Careers page
-    currentOpenings: "Pozitat e Disponueshme të Punës",
+    currentOpenings: "Ekipi Pas Suksesit Tonë",
     position: "Pozita",
     applyNow: "Apliko Tani",
     noOpenings: "Aktualisht nuk ka pozita të hapura.",
@@ -171,7 +171,7 @@ const translations = {
   EN: {
     home: "HOME",
     about: "ABOUT",
-    activities: "CAREERS",
+    activities: "OUR TEAM",
     brands: "BRANDS",
     catalogs: "CATALOGS",
     news: "NEWS",
@@ -197,7 +197,7 @@ const translations = {
       "Our dedicated team is committed to offering exceptional support and fast solutions for our clients. We prioritize customer satisfaction by providing clear communication, addressing concerns promptly, and offering tailored assistance to meet individual needs. With a focus on efficiency and reliability, we ensure that every client receives the attention and care they deserve, helping them navigate any challenges with ease.",
 
     // Careers page
-    currentOpenings: "Available Job Positions",
+    currentOpenings: "The Team Behind Our Success",
     position: "Position",
     applyNow: "Apply Now",
     noOpenings: "There are currently no openings.",
