@@ -17,8 +17,7 @@ import logo from "../images/logo.jpg";
 
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const { selectedLanguage, handleLanguageChange, currentTranslations } =
-    useLanguage();
+  const { handleLanguageChange, currentTranslations } = useLanguage();
 
   const toggleDrawer = () => {
     setDrawerOpen(!drawerOpen);
@@ -30,7 +29,6 @@ export default function Navbar() {
         display: "flex",
         alignItems: "center",
         gap: "8px",
-        color: "#CADCFC",
         fontSize: "16px",
         fontWeight: "bold",
       }}
@@ -38,7 +36,7 @@ export default function Navbar() {
       <Button
         onClick={() => handleLanguageChange("MK")}
         sx={{
-          color: selectedLanguage === "MK" ? "#ffffff" : "#CADCFC",
+          color: { xs: "#1860b1fb", sm: "#CADCFC" },
           minWidth: "auto",
           padding: "4px 8px",
           fontSize: "16px",
@@ -54,13 +52,13 @@ export default function Navbar() {
         sx={{
           width: "1px",
           height: "20px",
-          backgroundColor: "#CADCFC",
+          backgroundColor: "#31589cff",
         }}
       />
       <Button
         onClick={() => handleLanguageChange("AL")}
         sx={{
-          color: selectedLanguage === "AL" ? "#ffffff" : "#CADCFC",
+          color: { xs: "#1860b1fb", sm: "#CADCFC" },
           minWidth: "auto",
           padding: "4px 8px",
           fontSize: "16px",
@@ -76,13 +74,13 @@ export default function Navbar() {
         sx={{
           width: "1px",
           height: "20px",
-          backgroundColor: "#CADCFC",
+          backgroundColor: "#31589cff",
         }}
       />
       <Button
         onClick={() => handleLanguageChange("EN")}
         sx={{
-          color: selectedLanguage === "EN" ? "#ffffff" : "#CADCFC",
+          color: { xs: "#1860b1fb", sm: "#CADCFC" },
           minWidth: "auto",
           padding: "4px 8px",
           fontSize: "16px",
@@ -107,11 +105,11 @@ export default function Navbar() {
         zIndex: 1300,
       }}
     >
-      <Toolbar>
+      <Toolbar >
         <Typography
           variant="h6"
           sx={{
-            flexGrow: 4,
+            flexGrow: 1,
             whiteSpace: "nowrap",
             fontWeight: "bold",
             fontSize: { xs: "20px", sm: "30px" },
@@ -150,7 +148,6 @@ export default function Navbar() {
           sx={{
             display: { xs: "none", sm: "flex" },
             justifyContent: "flex-end",
-
             alignItems: "center",
             gap: "20px",
             flexGrow: 1,
@@ -158,42 +155,79 @@ export default function Navbar() {
         >
           <Link
             to="/home"
+            style={{
+              textDecoration: "none",
+              color: "inherit",
+            }}
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             <Button
-              style={{ color: "#CADCFC" }}
-              sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
+              sx={{
+                fontSize: "20px",
+                fontWeight: "bold",
+                color: { xs: "#1860b1fb", sm: "#CADCFC" },
+                textTransform: "none",
+              }}
             >
               {currentTranslations.home}
             </Button>
           </Link>
 
-          <Link to="/about" style={{ textDecoration: "none" }}>
+          <Link
+            to="/about"
+            style={{
+              textDecoration: "none",
+              color: "inherit",
+            }}
+          >
             <Button
-              style={{ color: "#CADCFC" }}
-              sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
+              sx={{
+                fontSize: "20px",
+                fontWeight: "bold",
+                color: { xs: "#1860b1fb", sm: "#CADCFC" },
+                textTransform: "none",
+              }}
             >
               {currentTranslations.about}
             </Button>
           </Link>
-          <Link to="/careers" style={{ textDecoration: "none" }}>
+          <Link
+            to="/careers"
+            style={{
+              textDecoration: "none",
+              color: "inherit",
+            }}
+          >
             <Button
-              style={{ color: "#CADCFC" }}
-              sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
+              sx={{
+                fontSize: "20px",
+                fontWeight: "bold",
+                color: { xs: "#1860b1fb", sm: "#CADCFC" },
+                textTransform: "none",
+              }}
             >
               {currentTranslations.activities}
             </Button>
           </Link>
-          <Link to="/contact" style={{ textDecoration: "none" }}>
+          <Link
+            to="/contact"
+            style={{
+              textDecoration: "none",
+              color: "inherit",
+            }}
+          >
             <Button
-              style={{ color: "#CADCFC" }}
-              sx={{ fontSize: "20px", fontWeight: "bold", color: "white" }}
+              sx={{
+                fontSize: "20px",
+                fontWeight: "bold",
+                color: { xs: "#1860b1fb", sm: "#CADCFC" },
+                textTransform: "none",
+              }}
             >
               {currentTranslations.contact}
             </Button>
           </Link>
 
-          {/* Language Selector */}
           <LanguageSelector />
         </Box>
       </Toolbar>
@@ -290,6 +324,12 @@ export default function Navbar() {
                   {currentTranslations.contact}
                 </Button>
               </Link>
+            </ListItem>
+
+            <ListItem sx={{ padding: "5px 0" }}>
+              <Box sx={{ marginTop: "1px" }}>
+                <LanguageSelector />
+              </Box>
             </ListItem>
           </List>
         </Box>

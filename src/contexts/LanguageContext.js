@@ -1,12 +1,9 @@
 import React, { createContext, useContext, useState } from "react";
 
-// Language context
 const LanguageContext = createContext();
 
-// Comprehensive translation data for the entire website
 const translations = {
   MK: {
-    // Navigation
     home: "ПОЧЕТНА",
     about: "ЗА НАС",
     activities: "КАРИЕРИ",
@@ -18,7 +15,7 @@ const translations = {
     companyName: "Даути-ТранспортШпед",
 
     // Home page
-    homeTitle: "Поврзување на вашиот товар со прецизност и грижа",
+    homeTitle: "Секогаш и насекаде, се приближуваме до вашиот бизнис…",
 
     // About page
     aboutTitle: "За Даути-Транспорт-Шпед",
@@ -35,19 +32,25 @@ const translations = {
       "Нашиот посветен тим е ангажиран да нуди исклучителна поддршка и брзи решенија за нашите клиенти. Ние ставаме приоритет на задоволството на клиентите со обезбедување јасна комуникација, брзо решавање на проблемите и нудење прилагодена помош за задоволување на индивидуалните потреби. Со фокус на ефикасност и сигурност, осигуруваме дека секој клиент добива внимание и грижа што ги заслужува, помагајќи им да се движат низ сите предизвици со леснотија.",
 
     // Careers page
-     currentOpenings: "Достапни работни позиции",
+    currentOpenings: "Достапни работни позиции",
     position: "Позиција",
     applyNow: "Аплицирај Сега",
     noOpenings: "Во моментов нема достапни позиции.",
     lookingForOpportunities: "Барате нови можности за кариера?",
     contactForJobs: "Контактирајте на",
     forMoreJobs: "за повеќе работни позиции.",
-    job1Desc: "Координатор на логистика: Управувајте со дневните операции на пратки, планирање на рути и оптимизација на трошоците.",
-    job2Desc: "Специјалист за транспорт на стоки: Координирајте меѓународно движење на стоки и обезбедете усогласеност со царината.",
-    job3Desc: "Менаџер на флота: Надгледувајте го одржувањето на возниот парк и обезбедете оперативна ефикасност.",
-    job4Desc: "Претставник за корисничка поддршка - Логистика: Поддржувајте клиенти за време на процесот на испорака и решавајте проблеми.",
-    job5Desc: "Супервизор на складиште: Управувајте со дневните операции во складиштето, инвентарот и координацијата на тимот.",
-    job6Desc: "Аналитичар за оптимизација на рути: Анализирајте ги рутите за достава за да ја подобрите ефикасноста на време и трошоци.",
+    job1Desc:
+      "Координатор на логистика: Управувајте со дневните операции на пратки, планирање на рути и оптимизација на трошоците.",
+    job2Desc:
+      "Специјалист за транспорт на стоки: Координирајте меѓународно движење на стоки и обезбедете усогласеност со царината.",
+    job3Desc:
+      "Менаџер на флота: Надгледувајте го одржувањето на возниот парк и обезбедете оперативна ефикасност.",
+    job4Desc:
+      "Претставник за корисничка поддршка - Логистика: Поддржувајте клиенти за време на процесот на испорака и решавајте проблеми.",
+    job5Desc:
+      "Супервизор на складиште: Управувајте со дневните операции во складиштето, инвентарот и координацијата на тимот.",
+    job6Desc:
+      "Аналитичар за оптимизација на рути: Анализирајте ги рутите за достава за да ја подобрите ефикасноста на време и трошоци.",
     noDescription: "Нема достапен опис.",
 
     // Contact page
@@ -69,27 +72,20 @@ const translations = {
     messageLabel: "Порака",
     send: "Испрати",
 
-    // Form validation
     required: "Потребно е",
     invalidEmail: "Невалидна е-пошта",
     invalidPhone: "Невалиден телефон",
 
-    // Success/Error messages
     messageSent: "Пораката е успешно испратена!",
     messageError: "Грешка при испраќање на пораката. Обидете се повторно.",
     applicationSent: "Апликацијата е успешно испратена!",
     applicationError:
       "Грешка при испраќање на апликацијата. Обидете се повторно.",
 
-    // Form and UI elements
     yourInformation: "Вашите информации",
-
-    // Additional career translations
- 
   },
 
   AL: {
-    // Navigation
     home: "KRYEFAQJA",
     about: "RRETH NESH",
     activities: "KARRIERA",
@@ -101,7 +97,7 @@ const translations = {
     companyName: "Dauti-TransportShped",
 
     // Home page
-    homeTitle: "Lidhja e ngarkesës suaj me precizion dhe kujdes",
+    homeTitle: "Kudo, çdoherë, ne afrohemi pranë biznesit tuaj…",
 
     // About page
     aboutTitle: "Rreth Dauti-Transport-Shped",
@@ -118,19 +114,25 @@ const translations = {
       "Ekipi ynë i dedikuar është i angazhuar për të ofruar mbështetje të jashtëzakonshme dhe zgjidhje të shpejta për klientët tanë. Ne japim prioritet kënaqësisë së klientit duke ofruar komunikim të qartë, duke adresuar shqetësimet në kohë dhe duke ofruar ndihmë të përshtatur për të plotësuar nevojat individuale. Me fokus në efikasitet dhe besueshmëri, ne sigurojmë që çdo klient të marrë vëmendjen dhe kujdesin që meriton, duke i ndihmuar ata të lundrojnë në çdo sfidë me lehtësi.",
 
     // Careers page
-     currentOpenings: "Pozitat e Disponueshme të Punës",
+    currentOpenings: "Pozitat e Disponueshme të Punës",
     position: "Pozita",
     applyNow: "Apliko Tani",
     noOpenings: "Aktualisht nuk ka pozita të hapura.",
     lookingForOpportunities: "Dëshironi mundësi të reja karriere?",
     contactForJobs: "Kontaktoni në",
     forMoreJobs: "për pozita të tjera pune.",
-    job1Desc: "Koordinator Logjistike: Menaxhoni operacionet ditore të dërgesave, planifikimin e rrugëve dhe optimizimin e kostove.",
-    job2Desc: "Specialist Transporti i Mallrave: Koordinoni lëvizjen ndërkombëtare të mallrave dhe sigurohuni për pajtueshmërinë doganore.",
-    job3Desc: "Menaxher i Flotës: Mbikëqyrni mirëmbajtjen e flotës së automjeteve dhe sigurohuni për efikasitetin operativ.",
-    job4Desc: "Përfaqësues Shërbimi për Klientët - Logjistikë: Mbështet klientët gjatë procesit të transportit dhe zgjidh problemet.",
-    job5Desc: "Supervizor Depo: Menaxhoni operacionet ditore të depozitimit, inventarin dhe koordinimin e ekipit.",
-    job6Desc: "Analist Optimizimi i Rrugëve: Analizoni rrugët e dorëzimit për të përmirësuar kohën dhe kostot.",
+    job1Desc:
+      "Koordinator Logjistike: Menaxhoni operacionet ditore të dërgesave, planifikimin e rrugëve dhe optimizimin e kostove.",
+    job2Desc:
+      "Specialist Transporti i Mallrave: Koordinoni lëvizjen ndërkombëtare të mallrave dhe sigurohuni për pajtueshmërinë doganore.",
+    job3Desc:
+      "Menaxher i Flotës: Mbikëqyrni mirëmbajtjen e flotës së automjeteve dhe sigurohuni për efikasitetin operativ.",
+    job4Desc:
+      "Përfaqësues Shërbimi për Klientët - Logjistikë: Mbështet klientët gjatë procesit të transportit dhe zgjidh problemet.",
+    job5Desc:
+      "Supervizor Depo: Menaxhoni operacionet ditore të depozitimit, inventarin dhe koordinimin e ekipit.",
+    job6Desc:
+      "Analist Optimizimi i Rrugëve: Analizoni rrugët e dorëzimit për të përmirësuar kohën dhe kostot.",
     noDescription: "Nuk ka përshkrim të disponueshëm.",
 
     // Contact page
@@ -152,12 +154,10 @@ const translations = {
     messageLabel: "Mesazhi",
     send: "Dërgo",
 
-    // Form validation
     required: "Kërkohet",
     invalidEmail: "Email i pavlefshëm",
     invalidPhone: "Telefon i pavlefshëm",
 
-    // Success/Error messages
     messageSent: "Mesazhi u dërgua me sukses!",
     messageError:
       "Gabim gjatë dërgimit të mesazhit. Ju lutemi provoni përsëri.",
@@ -165,15 +165,10 @@ const translations = {
     applicationError:
       "Gabim gjatë dërgimit të aplikimit. Ju lutemi provoni përsëri.",
 
-    // Form and UI elements
     yourInformation: "Informacionet tuaja",
-
-    // Additional career translations
-   
   },
 
   EN: {
-    // Navigation
     home: "HOME",
     about: "ABOUT",
     activities: "CAREERS",
@@ -185,7 +180,7 @@ const translations = {
     companyName: "Dauti-TransportShped",
 
     // Home page
-    homeTitle: "Connecting Your Cargo with Precision and Care",
+    homeTitle: "Everywhere, Everytime We move close to your Business...",
 
     // About page
     aboutTitle: "About Dauti-Transport-Shped",
@@ -202,19 +197,25 @@ const translations = {
       "Our dedicated team is committed to offering exceptional support and fast solutions for our clients. We prioritize customer satisfaction by providing clear communication, addressing concerns promptly, and offering tailored assistance to meet individual needs. With a focus on efficiency and reliability, we ensure that every client receives the attention and care they deserve, helping them navigate any challenges with ease.",
 
     // Careers page
-     currentOpenings: "Available Job Positions",
+    currentOpenings: "Available Job Positions",
     position: "Position",
     applyNow: "Apply Now",
     noOpenings: "There are currently no openings.",
     lookingForOpportunities: "Looking for new career opportunities?",
     contactForJobs: "Contact us at",
     forMoreJobs: "for more job positions.",
-    job1Desc: "Logistics Coordinator: Manage daily shipment operations, route planning, and ensure cost optimization.",
-    job2Desc: "Freight Forwarding Specialist: Coordinate international movement of goods and ensure customs compliance.",
-    job3Desc: "Fleet Manager: Oversee vehicle fleet maintenance and ensure operational efficiency.",
-    job4Desc: "Customer Service Representative - Logistics: Support clients during the shipping process and resolve issues.",
-    job5Desc: "Warehouse Supervisor: Manage daily warehouse operations, inventory, and team coordination.",
-    job6Desc: "Route Optimization Analyst: Analyze delivery routes to improve cost and time efficiency.",
+    job1Desc:
+      "Logistics Coordinator: Manage daily shipment operations, route planning, and ensure cost optimization.",
+    job2Desc:
+      "Freight Forwarding Specialist: Coordinate international movement of goods and ensure customs compliance.",
+    job3Desc:
+      "Fleet Manager: Oversee vehicle fleet maintenance and ensure operational efficiency.",
+    job4Desc:
+      "Customer Service Representative - Logistics: Support clients during the shipping process and resolve issues.",
+    job5Desc:
+      "Warehouse Supervisor: Manage daily warehouse operations, inventory, and team coordination.",
+    job6Desc:
+      "Route Optimization Analyst: Analyze delivery routes to improve cost and time efficiency.",
     noDescription: "No description available.",
 
     // Contact page
@@ -236,26 +237,19 @@ const translations = {
     messageLabel: "Message",
     send: "Send",
 
-    // Form validation
     required: "Required",
     invalidEmail: "Invalid email",
     invalidPhone: "Invalid phone number",
 
-    // Success/Error messages
     messageSent: "Message sent successfully!",
     messageError: "Error sending message. Please try again.",
     applicationSent: "Application sent successfully!",
     applicationError: "Error sending application. Please try again.",
 
-    // Form and UI elements
     yourInformation: "Your Information",
-
-    // Additional career translations
-
   },
 };
 
-// Custom hook to use language context
 export const useLanguage = () => {
   const context = useContext(LanguageContext);
   if (!context) {
@@ -264,20 +258,16 @@ export const useLanguage = () => {
   return context;
 };
 
-// Language provider component
 export const LanguageProvider = ({ children }) => {
   const [selectedLanguage, setSelectedLanguage] = useState(() => {
-    // Load saved language from localStorage, default to MK
     return localStorage.getItem("selectedLanguage") || "MK";
   });
 
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
-    // Store the selected language in localStorage for persistence
     localStorage.setItem("selectedLanguage", language);
   };
 
-  // Get current translations
   const currentTranslations = translations[selectedLanguage];
 
   const value = {

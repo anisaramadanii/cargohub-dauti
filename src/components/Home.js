@@ -19,12 +19,12 @@ export default function Home() {
         }}
       >
         <Typography
-          variant="h3"
+          variant="h1"
           sx={{
             marginTop: "30px",
             color: "#CADCFC",
             fontWeight: "bold",
-            fontSize: { xs: "28px", sm: "35px", md: "40px" },
+            fontSize: { xs: "22px", sm: "25px", md: "34px" },
             display: "inline-block",
             backgroundColor: "#00246B",
             padding: { xs: "3px", sm: "5px" },

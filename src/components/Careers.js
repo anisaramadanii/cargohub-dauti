@@ -76,7 +76,6 @@ export default function Careers() {
         style={{ marginBottom: "100px", marginTop: "-65px", width: "100%" }}
       />
 
-      {/* Titulli kryesor */}
       <Typography
         variant="h4"
         gutterBottom
@@ -85,7 +84,6 @@ export default function Careers() {
         {currentTranslations.currentOpenings}
       </Typography>
 
-      {/* Kartat e punës */}
       {loading ? (
         <CircularProgress />
       ) : jobs.length > 0 ? (

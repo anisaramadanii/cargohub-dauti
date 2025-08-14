@@ -6,7 +6,6 @@ import logo from "../images/logo-dauti3.jpg";
 import ISO from "../images/logo-iso-standard.jpg";
 import AEO from "../images/AEO.jpg";
 
-
 export default function Contact() {
   const { currentTranslations } = useLanguage();
   return (
@@ -1122,44 +1121,52 @@ export default function Contact() {
         >
           <LinkedIn sx={{ fontSize: 50 }} />
         </IconButton>
-
-
       </Box>
-  <Box
-  sx={{
-    display: "flex",
-    flexDirection: "row", 
-    alignItems: "center",
-    justifyContent: "center",
-    marginTop: 4, 
-    marginBottom: -10,   
-    gap: 2
-  }}
->
-   <Box
-    component="img"
-    src={AEO}
-    alt="Photo 2"
-    sx={{ width: 100, height: 100, cursor: "pointer" }}
-    onClick={() => window.open("https://example.com/photo2", "_blank")}
-  />
-  <Box
-    component="img"
-    src={ISO}
-    alt="Photo 1"
-    sx={{ width: 100, height: 100, cursor: "pointer" }}
-    onClick={() => window.open("https://example.com/photo1", "_blank")}
-  />
-  <Box
-    component="img"
-    src={logo}
-    alt="Photo 2"
-    sx={{ width: 500, height: 100, cursor: "pointer" }}
-    onClick={() => window.open("https://example.com/photo2", "_blank")}
-  />
-  
-</Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" }, 
+          alignItems: "center",
+          justifyContent: "center",
+          gap: { xs: 1, md: 2 },
+          marginTop: { xs: 2, md: 4 },
+          marginBottom: { xs: 2, md: -10 },
+        }}
+      >
+        <Box
+          component="img"
+          src={AEO}
+          alt="Photo 2"
+          sx={{
+            width: { xs: "35%", md: 100 }, 
+            height: { xs: "auto", md: 100 },
+            cursor: "pointer",
+          }}
+          onClick={() => window.open("https://example.com/photo2", "_blank")}
+        />
+        <Box
+          component="img"
+          src={ISO}
+          alt="Photo 1"
+          sx={{
+            width: { xs: "35%", md: 100 },
+            height: { xs: "auto", md: 100 },
+            cursor: "pointer",
+          }}
+          onClick={() => window.open("https://example.com/photo1", "_blank")}
+        />
+        <Box
+          component="img"
+          src={logo}
+          alt="Logo"
+          sx={{
+            width: { xs: "120%", md: 500 },
+            height: { xs: "auto", md: 100 },
+            cursor: "pointer",
+          }}
+          onClick={() => window.open("https://example.com/photo2", "_blank")}
+        />
+      </Box>
     </Box>
-    
   );
 }
