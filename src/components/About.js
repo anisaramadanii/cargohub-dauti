@@ -1,10 +1,19 @@
 import React from "react";
-import { Card, CardContent, CardMedia, Typography, Grid, useMediaQuery } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+  Grid,
+  useMediaQuery,
+} from "@mui/material";
 import experiencePhoto from "../images/our-experience.jpg";
 import insurance from "../images/foto5.jpg";
 import customer from "../images/customer-service.jpg";
 import { motion } from "framer-motion";
 import { useLanguage } from "../contexts/LanguageContext";
+import { Button } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 
 export default function About() {
   const isMobile = useMediaQuery("(max-width:600px)");
@@ -18,7 +27,7 @@ export default function About() {
     },
     {
       title: currentTranslations.goodsSafety,
-      image: insurance ,
+      image: insurance,
       description: currentTranslations.goodsSafetyDesc,
     },
     {
@@ -34,7 +43,7 @@ export default function About() {
       style={{
         padding: isMobile ? "20px" : "40px",
         marginTop: "30px",
-        paddingBottom: "50px",
+        paddingBottom: "60px",
       }}
     >
       <hr
@@ -88,7 +97,7 @@ export default function About() {
               <Card
                 style={{
                   width: isMobile ? "100%" : "400px",
-                  height: isMobile ? "auto" : "550px", 
+                  height: isMobile ? "auto" : "660px",
                   margin: "auto",
                   display: "flex",
                   flexDirection: "column",
@@ -97,7 +106,7 @@ export default function About() {
               >
                 <CardMedia
                   component="img"
-                  height={isMobile ? "220px" : "250px"} 
+                  height={isMobile ? "220px" : "250px"}
                   image={card.image}
                   alt={card.title}
                   style={{ flexShrink: 0, objectFit: "cover" }}
@@ -120,7 +129,6 @@ export default function About() {
                       fontSize: "18px",
                       lineHeight: "1.2",
                       minHeight: "22px",
-                     
                     }}
                   >
                     {card.title}
@@ -136,6 +144,17 @@ export default function About() {
                   >
                     {card.description}
                   </Typography>
+                  {index === 2 && (
+                    <Button
+                      component={RouterLink}
+                      to="/careers"
+                      variant="contained"
+                      color="primary"
+                      sx={{ mt: 2, alignSelf: "flex-start" }}
+                    >
+                      Read More
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             </motion.div>
