@@ -1,7 +1,7 @@
 import React from "react";
 import ImageCarousel from "./ImageCarousel";
 import About from "./About";
-import Careers from "./Careers";
+// import Careers from "./Careers";
 import Contact from "./Contact";
 import { Box, Typography } from "@mui/material";
 import { useLanguage } from "../contexts/LanguageContext";
@@ -39,9 +39,9 @@ export default function Home() {
         <About />
       </Box>
 
-      <Box id="careers-section" sx={{ paddingTop: { xs: "50px", md: "80px" } }}>
+      {/* <Box id="careers-section" sx={{ paddingTop: { xs: "50px", md: "80px" } }}>
         <Careers />
-      </Box>
+      </Box> */}
 
       <Box id="contact-section" sx={{ paddingTop: { xs: "50px", md: "80px" } }}>
         <Contact />

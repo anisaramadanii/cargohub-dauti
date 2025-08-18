@@ -244,7 +244,7 @@ export default function Navbar() {
       <Drawer
         anchor="right"
         open={drawerOpen}
-        onClick={() => handleNavClick("/home")}
+         onClose={toggleDrawer}
       >
         <Box
           sx={{
@@ -272,7 +272,8 @@ export default function Navbar() {
                     textAlign: "left",
                     width: "100%",
                   }}
-                  onClick={toggleDrawer}
+                onClick={() => handleNavClick("/home")}
+
                 >
                   {currentTranslations.home}
                 </Button>
@@ -292,7 +293,8 @@ export default function Navbar() {
                     textAlign: "left",
                     width: "100%",
                   }}
-                  onClick={toggleDrawer}
+                  onClick={() => handleNavClick("/about")}
+
                 >
                   {currentTranslations.about}
                 </Button>
@@ -312,7 +314,8 @@ export default function Navbar() {
                     textAlign: "left",
                     width: "100%",
                   }}
-                  onClick={toggleDrawer}
+                onClick={() => handleNavClick("/activities")}
+
                 >
                   {currentTranslations.activities}
                 </Button>
@@ -332,7 +335,8 @@ export default function Navbar() {
                     textAlign: "left",
                     width: "100%",
                   }}
-                  onClick={toggleDrawer}
+                onClick={() => handleNavClick("/contact")}
+
                 >
                   {currentTranslations.contact}
                 </Button>
