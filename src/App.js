@@ -10,7 +10,6 @@ import About from "./components/About";
 import Careers from "./components/Careers";
 import Contact from "./components/Contact";
 import "./styles.css";
-import YourInformation from "./components/YourInformation";
 import { LanguageProvider } from "./contexts/LanguageContext";
 
 function App() {
@@ -25,7 +24,6 @@ function App() {
           <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/" />} />
-          <Route path="/your-information" element={<YourInformation />} />
         </Routes>
       </Router>
     </LanguageProvider>

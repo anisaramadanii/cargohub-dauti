@@ -24,34 +24,21 @@ const translations = {
     ourExperience: "Нашето искуство",
     ourExperienceDesc:
       "Пазарните потреби во една не толку економски развиена земја доведоа до развој на бизнис идеја како резултат на постоечките пазарни можности. Токму во 2003 година беше воспоставено партнерство помеѓу браќата Даути и Рамадани, кое денес претставува една од компаниите со највисок бруто-профит во земјата. Нашата компанија има над 20 години искуство во увоз и извоз на разни стоки во различни земји.",
-      goodsSafety: "Безбедност на стоките",
+    goodsSafety: "Безбедност на стоките",
     goodsSafetyDesc:
       "Безбедноста на стоките е наш врвен приоритет. Нашата употреба на напредна технологија и современа опрема ни овозможува да го следиме секој стадиум од патувањето, обезбедувајќи навремени и безоштетни испораки. Оваа посветеност на квалитет и доверливост ни ја донесе репутацијата на сигурен лидер на пазарот. Дополнително, нашата посветеност на континуирано унапредување гарантира напреден систем кој обезбедува целосна заштита и доверливост за секоја пратка.",
     customerService: "Клиентска услуга",
     customerServiceDesc:
       "Нашиот посветен тим е посветен на нудење извонредна поддршка и брзи решенија за нашите клиенти. Ние го ставаме задоволството на клиентите во прв план преку обезбедување јасна комуникација, навремено адресирање на загриженостите и понуда на прилагодена помош за задоволување на индивидуалните потреби. Со фокус на ефикасност и доверливост, обезбедуваме секој клиент да ја добие вниманието и грижата што ја заслужува, помагајќи му лесно да се справи со какви било предизвици.",
+    readMore: "Прочитај повеќе",
 
     // Careers page
-    currentOpenings: "Тимот зад нашиот успех",
-    position: "Позиција",
-    applyNow: "Аплицирај Сега",
-    noOpenings: "Во моментов нема достапни позиции.",
-    lookingForOpportunities: "Барате нови можности за кариера?",
-    contactForJobs: "Контактирајте на",
-    forMoreJobs: "за повеќе работни позиции.",
-    job1Desc:
-      "Координатор на логистика: Управувајте со дневните операции на пратки, планирање на рути и оптимизација на трошоците.",
-    job2Desc:
-      "Специјалист за транспорт на стоки: Координирајте меѓународно движење на стоки и обезбедете усогласеност со царината.",
-    job3Desc:
-      "Менаџер на флота: Надгледувајте го одржувањето на возниот парк и обезбедете оперативна ефикасност.",
-    job4Desc:
-      "Претставник за корисничка поддршка - Логистика: Поддржувајте клиенти за време на процесот на испорака и решавајте проблеми.",
-    job5Desc:
-      "Супервизор на складиште: Управувајте со дневните операции во складиштето, инвентарот и координацијата на тимот.",
-    job6Desc:
-      "Аналитичар за оптимизација на рути: Анализирајте ги рутите за достава за да ја подобрите ефикасноста на време и трошоци.",
-    noDescription: "Нема достапен опис.",
+    aboutMacedonia:
+      "Dauti Transport Shped е првата компанија основана во Сарај, Северна Македонија, која постигна брз успех благодарение на професионалноста и доверливите услуги. Со текот на времето, компанијата се прошири надвор од државните граници, отворајќи подружници и во други земји, и стана препознатливо име во областа на транспортот и логистиката. Денес, Dauti Transport Shped претставува симбол на посветеност, квалитет и континуиран развој.",
+    aboutAlbania:
+      " Dauti Transportsped Sh.p.k. е сигурна и професионална транспортна компанија основана во 2019 година со седиште во Џафзотај Вррине,Драч, Албанија. Со долгогодишно искуство во логистиката и транспортот, нудиме квалитетни услуги за транспорт на различни видови товари, како на домашен така и на меѓународен пазар. Нашиот тим е посветен на навремена и безбедна достава, прилагодена на потребите на секој клиент. Користиме современа опрема и технологии за да обезбедиме максимална ефикасност и сигурност во процесот на транспорт. Целта ни е да изградиме долгорочни партнерства преку професионалност и доверба.",
+    aboutKroacia:
+      " Dauti Transportšped d.o.o. е доверлива и професионална компанија е основана во 2021 година со седиште на ул.Павлинска улица 5,42000 Вараждин, Р.Хрватска, специјализирана за транспорт и логистички услуги.Со долгогодишно искуство во транспортната индустрија, нудиме квалитетни и безбедни решенија за сите видови товари, како на домашен така и на меѓународен план. Нашиот тим од стручни лица е посветен на навремена достава и задоволство на клиентите, користејќи модерна опрема и прилагодени логистички услуги.",
 
     // Contact page
     contactTitle: "Контакт",
@@ -112,28 +99,15 @@ const translations = {
     customerService: "Shërbimi ndaj klientit",
     customerServiceDesc:
       "Ekipi ynë i dedikuar është i angazhuar për të ofruar mbështetje të jashtëzakonshme dhe zgjidhje të shpejta për klientët tanë. Ne japim prioritet kënaqësisë së klientit duke ofruar komunikim të qartë, duke adresuar shqetësimet në kohë dhe duke ofruar ndihmë të përshtatur për të plotësuar nevojat individuale. Me fokus në efikasitet dhe besueshmëri, ne sigurojmë që çdo klient të marrë vëmendjen dhe kujdesin që meriton, duke i ndihmuar ata të lundrojnë në çdo sfidë me lehtësi.",
+    readMore: "Lexo më shumë",
 
     // Careers page
-    currentOpenings: "Ekipi Pas Suksesit Tonë",
-    position: "Pozita",
-    applyNow: "Apliko Tani",
-    noOpenings: "Aktualisht nuk ka pozita të hapura.",
-    lookingForOpportunities: "Dëshironi mundësi të reja karriere?",
-    contactForJobs: "Kontaktoni në",
-    forMoreJobs: "për pozita të tjera pune.",
-    job1Desc:
-      "Koordinator Logjistike: Menaxhoni operacionet ditore të dërgesave, planifikimin e rrugëve dhe optimizimin e kostove.",
-    job2Desc:
-      "Specialist Transporti i Mallrave: Koordinoni lëvizjen ndërkombëtare të mallrave dhe sigurohuni për pajtueshmërinë doganore.",
-    job3Desc:
-      "Menaxher i Flotës: Mbikëqyrni mirëmbajtjen e flotës së automjeteve dhe sigurohuni për efikasitetin operativ.",
-    job4Desc:
-      "Përfaqësues Shërbimi për Klientët - Logjistikë: Mbështet klientët gjatë procesit të transportit dhe zgjidh problemet.",
-    job5Desc:
-      "Supervizor Depo: Menaxhoni operacionet ditore të depozitimit, inventarin dhe koordinimin e ekipit.",
-    job6Desc:
-      "Analist Optimizimi i Rrugëve: Analizoni rrugët e dorëzimit për të përmirësuar kohën dhe kostot.",
-    noDescription: "Nuk ka përshkrim të disponueshëm.",
+    aboutMacedonia:
+      "Dauti Transport Shped është kompania e parë e themeluar në Saraj, Maqedonia e Veriut, e cila arriti sukses të shpejtë falë profesionalizmit dhe shërbimeve të besueshme. Me kalimin e kohës, kompania u zgjerua jashtë kufijve shtetërorë, duke hapur degë edhe në vende të tjera, dhe u bë një emër i njohur në fushën e transportit dhe logjistikës. Sot, Dauti Transport Shped përfaqëson një simbol të përkushtimit, cilësisë dhe zhvillimit të vazhdueshëm.",
+    aboutAlbania:
+      "Dauti Transportsped Sh.p.k. është një kompani transporti e sigurt dhe profesionale, e themeluar në vitin 2019 me seli në Zhafzotaj Vrrine, Durrës, Shqipëri. Me eksperiencë të gjatë në logjistikë dhe transport, ne ofrojmë shërbime cilësore për transportin e llojeve të ndryshme të ngarkesave, si në tregun vendas, ashtu edhe në atë ndërkombëtar. Ekipi ynë është i përkushtuar për dorëzime të sigurta dhe në kohë, të përshtatura sipas nevojave të çdo klienti. Ne përdorim pajisje dhe teknologji moderne për të siguruar efikasitet dhe siguri maksimale gjatë procesit të transportit. Qëllimi ynë është të ndërtojmë partneritete afatgjata përmes profesionalizmit dhe besueshmërisë.",
+    aboutKroacia:
+      "Dauti Transportšped d.o.o. është një kompani e besueshme dhe profesionale, e themeluar në vitin 2021 me seli në ul. Pavlinska 5, 42000 Varaždin, Kroaci, e specializuar në shërbime transporti dhe logjistike. Me përvojë të gjatë në industrinë e transportit, ne ofrojmë zgjidhje cilësore dhe të sigurta për të gjitha llojet e ngarkesave, si në tregun vendas, ashtu edhe në atë ndërkombëtar. Ekipi ynë i ekspertëve është i përkushtuar për dorëzime në kohë dhe kënaqësinë e klientëve, duke përdorur pajisje moderne dhe shërbime logjistike të personalizuara.",
 
     // Contact page
     contactTitle: "Kontakti",
@@ -195,28 +169,15 @@ const translations = {
     customerService: "Customer Service",
     customerServiceDesc:
       "Our dedicated team is committed to offering exceptional support and fast solutions for our clients. We prioritize customer satisfaction by providing clear communication, addressing concerns promptly, and offering tailored assistance to meet individual needs. With a focus on efficiency and reliability, we ensure that every client receives the attention and care they deserve, helping them navigate any challenges with ease.",
+    readMore: "Read More",
 
     // Careers page
-    currentOpenings: "The Team Behind Our Success",
-    position: "Position",
-    applyNow: "Apply Now",
-    noOpenings: "There are currently no openings.",
-    lookingForOpportunities: "Looking for new career opportunities?",
-    contactForJobs: "Contact us at",
-    forMoreJobs: "for more job positions.",
-    job1Desc:
-      "Logistics Coordinator: Manage daily shipment operations, route planning, and ensure cost optimization.",
-    job2Desc:
-      "Freight Forwarding Specialist: Coordinate international movement of goods and ensure customs compliance.",
-    job3Desc:
-      "Fleet Manager: Oversee vehicle fleet maintenance and ensure operational efficiency.",
-    job4Desc:
-      "Customer Service Representative - Logistics: Support clients during the shipping process and resolve issues.",
-    job5Desc:
-      "Warehouse Supervisor: Manage daily warehouse operations, inventory, and team coordination.",
-    job6Desc:
-      "Route Optimization Analyst: Analyze delivery routes to improve cost and time efficiency.",
-    noDescription: "No description available.",
+    aboutMacedonia:
+      "Dauti Transport Shped is the first company established in Saraj, North Macedonia, which quickly achieved success thanks to its professionalism and reliable services. Over time, the company expanded beyond national borders, opening branches in other countries as well, and became a recognized name in the field of transport and logistics. Today, Dauti Transport Shped represents a symbol of dedication, quality, and continuous development.",
+    aboutAlbania:
+      "Dauti Transportsped Sh.p.k. is a reliable and professional transport company, founded in 2019 and headquartered in Zhafzotaj Vrrine, Durrës, Albania. With extensive experience in logistics and transportation, we provide high-quality services for transporting various types of cargo, both domestically and internationally. Our team is dedicated to timely and secure deliveries, tailored to the needs of each client. We use modern equipment and technology to ensure maximum efficiency and safety throughout the transport process. Our goal is to build long-term partnerships through professionalism and trust.",
+    aboutKroacia:
+      "Dauti Transportšped d.o.o. is a reliable and professional company, founded in 2021 and headquartered at ul. Pavlinska 5, 42000 Varaždin, Croatia, specializing in transportation and logistics services. With extensive experience in the transport industry, we provide high-quality and secure solutions for all types of cargo, both domestically and internationally. Our team of experts is dedicated to timely deliveries and customer satisfaction, utilizing modern equipment and tailored logistics services.",
 
     // Contact page
     contactTitle: "Contact",

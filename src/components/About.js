@@ -152,7 +152,7 @@ export default function About() {
                       color="primary"
                       sx={{ mt: 2, alignSelf: "flex-start" }}
                     >
-                      Read More
+                       {currentTranslations.readMore}
                     </Button>
                   )}
                 </CardContent>
