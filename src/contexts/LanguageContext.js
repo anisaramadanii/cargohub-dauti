@@ -6,7 +6,7 @@ const translations = {
   MK: {
     home: "ПОЧЕТНА",
     about: "ЗА НАС",
-    activities: "НАШИОТ ТИМ",
+    activities: "ЛОКАЦИИ КАДЕ ШТО РАБОТИМЕ",
     brands: "БРЕНДОВИ",
     catalogs: "КАТАЛОЗИ",
     news: "ВЕСТИ",
@@ -75,7 +75,7 @@ const translations = {
   AL: {
     home: "KRYEFAQJA",
     about: "RRETH NESH",
-    activities: "EKIPI YNË",
+    activities: "VENDET KU OPEROJMË",
     brands: "BRENDE",
     catalogs: "KATALOGE",
     news: "LAJME",
@@ -145,7 +145,7 @@ const translations = {
   EN: {
     home: "HOME",
     about: "ABOUT",
-    activities: "OUR TEAM",
+    activities: "WHERE WE OPERATE",
     brands: "BRANDS",
     catalogs: "CATALOGS",
     news: "NEWS",
