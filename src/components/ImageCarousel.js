@@ -1,11 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
 import { Box } from "@mui/material";
-import foto1 from "../images/foto1.jpg";
+// import foto1 from "../images/foto1.jpg";
 import foto2 from "../images/foto2.jpg";
 import foto3 from "../images/foto3.jpg";
 import foto4 from "../images/foto4.jpg";
 import ourexperience from "../images/our-experience.jpg";
+import neww from "../images/new-photo.jpg";
+
 
 function PrevArrow(props) {
   const { className, onClick } = props;
@@ -76,7 +78,7 @@ export default function ImageCarousel() {
       }}
     >
       <Slider {...sliderSettings}>
-        {[foto1, foto2, foto3, foto4, ourexperience].map((foto, index) => (
+        {[neww, foto2, foto3, foto4, ourexperience].map((foto, index) => (
           <Box
             key={index}
             sx={{

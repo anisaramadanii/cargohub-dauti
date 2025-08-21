@@ -6,7 +6,7 @@ const translations = {
   MK: {
     home: "ПОЧЕТНА",
     about: "ЗА НАС",
-    activities: "ЛОКАЦИИ КАДЕ ШТО РАБОТИМЕ",
+    activities: "ГЛОБАЛНО ПРИСУСТВО",
     brands: "БРЕНДОВИ",
     catalogs: "КАТАЛОЗИ",
     news: "ВЕСТИ",
@@ -31,6 +31,12 @@ const translations = {
     customerServiceDesc:
       "Нашиот посветен тим е посветен на нудење извонредна поддршка и брзи решенија за нашите клиенти. Ние го ставаме задоволството на клиентите во прв план преку обезбедување јасна комуникација, навремено адресирање на загриженостите и понуда на прилагодена помош за задоволување на индивидуалните потреби. Со фокус на ефикасност и доверливост, обезбедуваме секој клиент да ја добие вниманието и грижата што ја заслужува, помагајќи му лесно да се справи со какви било предизвици.",
     readMore: "Прочитај повеќе",
+    director:
+      " Како директор, посебно ми е чест да ви претставам компанија која со години гради доверба, сигурност и професионализам во областа на транспортот и шпедицијата. Нашиот професионален тим е посветен на ефикасни решенија, навремена испорака и целосна поддршка за нашите клиенти и партнери. ",
+    thanks:
+      "Ви благодариме што сте дел од нашата приказна и ви стоиме на располагање за соработка.",
+    director2:
+      "Како Управител на Даути-Транспортшпед АД, ми претставува чест што од 2003 година сме доверлив партнер во областа на шпедицијата, царинското посредување и меѓународниот транспорт. Нашата мисија е јасна – да овозможиме сигурно, брзо и ефикасно движење . Секој клиент го гледаме како долгогодишен партнер, а секој предизвик како можност за подобрување.",
 
     // Careers page
     aboutMacedonia:
@@ -75,7 +81,7 @@ const translations = {
   AL: {
     home: "KRYEFAQJA",
     about: "RRETH NESH",
-    activities: "VENDET KU OPEROJMË",
+    activities: "PRANIA GLOBALE",
     brands: "BRENDE",
     catalogs: "KATALOGE",
     news: "LAJME",
@@ -100,6 +106,12 @@ const translations = {
     customerServiceDesc:
       "Ekipi ynë i dedikuar është i angazhuar për të ofruar mbështetje të jashtëzakonshme dhe zgjidhje të shpejta për klientët tanë. Ne japim prioritet kënaqësisë së klientit duke ofruar komunikim të qartë, duke adresuar shqetësimet në kohë dhe duke ofruar ndihmë të përshtatur për të plotësuar nevojat individuale. Me fokus në efikasitet dhe besueshmëri, ne sigurojmë që çdo klient të marrë vëmendjen dhe kujdesin që meriton, duke i ndihmuar ata të lundrojnë në çdo sfidë me lehtësi.",
     readMore: "Lexo më shumë",
+    director:
+      "Si drejtor, më bën veçanërisht nder që t’ju prezantoj një kompani e cila ndër vite ka ndërtuar besim, siguri dhe profesionalizëm në fushën e transportit dhe spedicioni. Ekipi ynë profesional është i përkushtuar ndaj zgjidhjeve efikase, dorëzimit në kohë dhe mbështetjes së plotë për klientët dhe partnerët tanë. ",
+    thanks:
+      "Ju falënderojmë që jeni pjesë e historisë sonë dhe jemi gjithmonë në dispozicion për bashkëpunim.",
+    director2:
+      "Si Administrator i Dauti-Transportshped AD, për mua është nder që prej vitit 2003 jemi partner i besueshëm në fushën e spedicioni, ndërmjetësimit doganor dhe transportit ndërkombëtar. Misioni ynë është i qartë – të mundësojmë lëvizje të sigurt, të shpejtë dhe efikase. Çdo klient e shohim si partner afatgjatë, ndërsa çdo sfidë si mundësi për përmirësim.",
 
     // Careers page
     aboutMacedonia:
@@ -145,7 +157,7 @@ const translations = {
   EN: {
     home: "HOME",
     about: "ABOUT",
-    activities: "WHERE WE OPERATE",
+    activities: "GLOBAL PRESENCE",
     brands: "BRANDS",
     catalogs: "CATALOGS",
     news: "NEWS",
@@ -170,6 +182,12 @@ const translations = {
     customerServiceDesc:
       "Our dedicated team is committed to offering exceptional support and fast solutions for our clients. We prioritize customer satisfaction by providing clear communication, addressing concerns promptly, and offering tailored assistance to meet individual needs. With a focus on efficiency and reliability, we ensure that every client receives the attention and care they deserve, helping them navigate any challenges with ease.",
     readMore: "Read More",
+    director:
+      "As a director, it is my particular honor to present to you a company that, over the years, has built trust, reliability, and professionalism in the field of transport and freight forwarding. Our professional team is dedicated to efficient solutions, timely delivery, and full support for our clients and partners.",
+    thanks:
+      " We thank you for being part of our story and we remain at your disposal for collaboration.",
+    director2:
+      "As the Manager of Dauti-Transportshped AD, it is an honor for me that since 2003 we have been a reliable partner in the field of freight forwarding, customs brokerage, and international transport. Our mission is clear – to ensure safe, fast, and efficient movement. We see every client as a long-term partner, and every challenge as an opportunity for improvement.",
 
     // Careers page
     aboutMacedonia:

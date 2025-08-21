@@ -1086,6 +1086,157 @@ export default function Contact() {
           </Grid>
         </Grid>
       </Box>
+
+      {/* Adress CV*/}
+      <Box
+        id="contact-section"
+        sx={{
+          paddingTop: { xs: "2rem", sm: "3rem" },
+          backgroundColor: "#2C3E50",
+        }}
+      >
+        <Grid container spacing={3} justifyContent="center">
+          <Grid item xs={12} sm={6} md={5}>
+            <Paper
+              elevation={3}
+              sx={{
+                padding: "0.2rem",
+                backgroundColor: "white",
+                color: "black",
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                textAlign: "center",
+                justifyContent: "center",
+                "&:hover": {
+                  color: "#1565c0",
+                  transition: "color 0.3s ease",
+                },
+              }}
+            >
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  mb: 2,
+                  gap: 2,
+                  flexWrap: "wrap",
+                  ml: 6,
+                }}
+              >
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: "bold",
+                    fontSize: { xs: "18px", sm: "23px" },
+                  }}
+                >
+                  Правна служба и човечки ресурси
+                </Typography>
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: "bold",
+                    fontSize: { xs: "18px", sm: "23px" },
+                  }}
+                >
+                  Legal service and Human resources
+                </Typography>
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: "bold",
+                    fontSize: { xs: "18px", sm: "23px" },
+                  }}
+                >
+                  Shërbimi ligjor dhe burimet njerëzore
+                </Typography>
+              </Box>
+            </Paper>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={5}>
+            <Paper
+              elevation={3}
+              sx={{
+                padding: "0.2rem",
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "flex-start",
+                gap: "10px",
+              }}
+            >
+              <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
+                <Phone
+                  sx={{
+                    color: "#1565c0",
+                    fontSize: 35,
+                    mr: 2,
+                    marginLeft: "20px",
+                    marginTop: "10px",
+                  }}
+                />
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: "bold",
+                    marginLeft: "4px",
+                    marginTop: "10px",
+                  }}
+                >
+                  Telefon
+                </Typography>
+              </Box>
+              <Typography
+                variant="body1"
+                sx={{
+                  mb: 1,
+                  marginLeft: "29px",
+                  marginTop: "-18px",
+                  fontSize: { xs: "16px", sm: "20px" },
+                }}
+              >
+                +389 70 404 948
+              </Typography>
+
+              <Box sx={{ display: "flex", alignItems: "center", mt: 3 }}>
+                <Email
+                  sx={{
+                    color: "#1565c0",
+                    fontSize: 35,
+                    mr: 2,
+                    marginLeft: "20px",
+                    marginTop: "-30px",
+                  }}
+                />
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: "bold",
+                    marginLeft: "4px",
+                    marginTop: "-30px",
+                  }}
+                >
+                  E-mail
+                </Typography>
+              </Box>
+              <Typography
+                variant="body1"
+                sx={{
+                  marginLeft: "20px",
+                  marginBottom: "20px",
+                  fontSize: { xs: "16px", sm: "20px" },
+                }}
+              >
+                edina@dauti-transhped.com.mk
+              </Typography>
+            </Paper>
+          </Grid>
+        </Grid>
+      </Box>
       <Box sx={{ display: "flex", justifyContent: "center", gap: 4, mt: 6 }}>
         <IconButton
           color="primary"
@@ -1125,7 +1276,7 @@ export default function Contact() {
       <Box
         sx={{
           display: "flex",
-          flexDirection: { xs: "column", md: "row" }, 
+          flexDirection: { xs: "column", md: "row" },
           alignItems: "center",
           justifyContent: "center",
           gap: { xs: 1, md: 2 },
@@ -1138,7 +1289,7 @@ export default function Contact() {
           src={AEO}
           alt="Photo 2"
           sx={{
-            width: { xs: "35%", md: 100 }, 
+            width: { xs: "35%", md: 100 },
             height: { xs: "auto", md: 100 },
             cursor: "pointer",
           }}
