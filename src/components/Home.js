@@ -42,9 +42,9 @@
 //         <Careers />
 //       </Box> */}
 
-//       <Box id="contact-section" sx={{ paddingTop: { xs: "50px", md: "80px" } }}>
-//         <Contact />
-//       </Box>
+      // <Box id="contact-section" sx={{ paddingTop: { xs: "50px", md: "80px" } }}>
+      //   <Contact />
+      // </Box>
 //     </div>
 //   );
 // }
@@ -76,13 +76,7 @@ export default function Home() {
       </Box>
 
       {/* Contact Section */}
-      <Box
-        id="contact-section"
-        sx={{
-          paddingTop: { xs: "50px", md: "80px" },
-          paddingX: { xs: "15px", sm: "30px", md: "60px" },
-        }}
-      >
+       <Box id="contact-section" sx={{ paddingTop: { xs: "50px", md: "80px" } }}>
         <Contact />
       </Box>
     </Box>
