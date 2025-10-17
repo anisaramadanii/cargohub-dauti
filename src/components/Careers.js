@@ -4,9 +4,13 @@ import albania from "../images/Albania-map.jpg";
 import croatia from "../images/croatia-map.jpg";
 import macedonia from "../images/macedonia-map.jpg";
 import { useLanguage } from "../contexts/LanguageContext";
+import { useEffect } from "react";
 
 function Careers() {
   const { currentTranslations } = useLanguage();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Box
       sx={{
@@ -111,7 +115,7 @@ function Careers() {
             mt: { xs: 2, md: 0 },
           }}
         >
-         {currentTranslations.aboutKroacia}
+          {currentTranslations.aboutKroacia}
         </Typography>
       </Box>
     </Box>
