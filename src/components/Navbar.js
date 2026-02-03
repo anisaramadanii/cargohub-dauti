@@ -6,26 +6,32 @@ import {
   Button,
   Box,
   IconButton,
-  Drawer,
-  List,
-  ListItem,
+  Menu,
+  MenuItem,
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { useLanguage } from "../contexts/LanguageContext";
 import logo from "../images/logo.jpg";
 import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const { handleLanguageChange, currentTranslations } = useLanguage();
 
+
+  const [servicesAnchor, setServicesAnchor] = useState(null);
+  const handleServicesOpen = (event) => setServicesAnchor(event.currentTarget);
+  const handleServicesClose = () => setServicesAnchor(null);
+
+  const { handleLanguageChange, currentTranslations } = useLanguage();
   const navigate = useNavigate();
 
   const handleNavClick = (path) => {
     navigate(path);
     window.scrollTo({ top: 0, behavior: "smooth" });
     setDrawerOpen(false);
+    handleServicesClose();
   };
 
   const toggleDrawer = () => {
@@ -50,19 +56,12 @@ export default function Navbar() {
           padding: "4px 8px",
           fontSize: "16px",
           fontWeight: "bold",
-          "&:hover": {
-            backgroundColor: "rgba(255, 255, 255, 0.1)",
-          },
         }}
       >
         MK
       </Button>
       <Box
-        sx={{
-          width: "1px",
-          height: "20px",
-          backgroundColor: "#31589cff",
-        }}
+        sx={{ width: "1px", height: "20px", backgroundColor: "#31589cff" }}
       />
       <Button
         onClick={() => handleLanguageChange("AL")}
@@ -72,19 +71,12 @@ export default function Navbar() {
           padding: "4px 8px",
           fontSize: "16px",
           fontWeight: "bold",
-          "&:hover": {
-            backgroundColor: "rgba(255, 255, 255, 0.1)",
-          },
         }}
       >
         AL
       </Button>
       <Box
-        sx={{
-          width: "1px",
-          height: "20px",
-          backgroundColor: "#31589cff",
-        }}
+        sx={{ width: "1px", height: "20px", backgroundColor: "#31589cff" }}
       />
       <Button
         onClick={() => handleLanguageChange("EN")}
@@ -94,9 +86,6 @@ export default function Navbar() {
           padding: "4px 8px",
           fontSize: "16px",
           fontWeight: "bold",
-          "&:hover": {
-            backgroundColor: "rgba(255, 255, 255, 0.1)",
-          },
         }}
       >
         EN
@@ -108,11 +97,7 @@ export default function Navbar() {
     <AppBar
       position="fixed"
       style={{ backgroundColor: "#00246B" }}
-      sx={{
-        top: 0,
-        width: "100%",
-        zIndex: 1300,
-      }}
+      sx={{ top: 0, width: "100%", zIndex: 1300 }}
     >
       <Toolbar>
         <Typography
@@ -143,16 +128,12 @@ export default function Navbar() {
         </Typography>
 
         <Box sx={{ display: { xs: "block", sm: "none" } }}>
-          <IconButton
-            edge="end"
-            color="inherit"
-            aria-label="menu"
-            onClick={toggleDrawer}
-          >
+          <IconButton edge="end" color="inherit" onClick={toggleDrawer}>
             <MenuIcon />
           </IconButton>
         </Box>
 
+        {/* DESKTOP MENU */}
         <Box
           sx={{
             display: { xs: "none", sm: "flex" },
@@ -162,195 +143,93 @@ export default function Navbar() {
             flexGrow: 1,
           }}
         >
-          <Link
-            to="/home"
-            style={{
-              textDecoration: "none",
-              color: "inherit",
+          <Button
+            onClick={() => handleNavClick("/home")}
+            sx={{
+              fontSize: "20px",
+              fontWeight: "bold",
+              color: { xs: "#1860b1fb", sm: "#CADCFC" },
+              textTransform: "none",
             }}
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
-            <Button
-              sx={{
-                fontSize: "20px",
-                fontWeight: "bold",
-                color: { xs: "#1860b1fb", sm: "#CADCFC" },
-                textTransform: "none",
-              }}
-            >
-              {currentTranslations.home}
-            </Button>
-          </Link>
+            {currentTranslations.home}
+          </Button>
 
-          <Link
-            to="/about"
-            style={{
-              textDecoration: "none",
-              color: "inherit",
+          <Button
+            onClick={() => handleNavClick("/about")}
+            sx={{
+              fontSize: "20px",
+              fontWeight: "bold",
+              color: { xs: "#1860b1fb", sm: "#CADCFC" },
+              textTransform: "none",
             }}
           >
-            <Button
-              sx={{
-                fontSize: "20px",
-                fontWeight: "bold",
-                color: { xs: "#1860b1fb", sm: "#CADCFC" },
-                textTransform: "none",
-              }}
+            {currentTranslations.about}
+          </Button>
+
+      
+          <Button
+            onClick={handleServicesOpen}
+            endIcon={<KeyboardArrowDownIcon />}
+            sx={{
+              fontSize: "20px",
+              fontWeight: "bold",
+              color: { xs: "#1860b1fb", sm: "#CADCFC" },
+              textTransform: "none",
+            }}
+          >
+            {currentTranslations.services}
+          </Button>
+
+       
+          <Menu
+            anchorEl={servicesAnchor}
+            open={Boolean(servicesAnchor)}
+            onClose={handleServicesClose}
+            PaperProps={{
+              sx: {
+                backgroundColor: "#111",
+                color: "#fff",
+                mt: 1,
+                px: 2,
+              },
+            }}
+          >
+            <MenuItem
+              onClick={() => handleNavClick("/transport")}
+              sx={{ fontSize: "17px", fontWeight: "bold" }}
             >
-              {currentTranslations.about}
-            </Button>
-          </Link>
-          <Link
-            to="/careers"
-            style={{
-              textDecoration: "none",
-              color: "inherit",
-            }}
-          >
-            <Button
-              sx={{
-                fontSize: "20px",
-                fontWeight: "bold",
-                color: { xs: "#1860b1fb", sm: "#CADCFC" },
-                textTransform: "none",
-              }}
+              {currentTranslations.transport}
+            </MenuItem>
+            <MenuItem
+              onClick={() => handleNavClick("/spedition")}
+              sx={{ fontSize: "17px", fontWeight: "bold" }}
+            >
+              {currentTranslations.spedition}
+            </MenuItem>
+            <MenuItem
+              onClick={() => handleNavClick("/careers")}
+              sx={{ fontSize: "17px", fontWeight: "bold" }}
             >
               {currentTranslations.activities}
-            </Button>
-          </Link>
-          <Link
-            to="/contact"
-            style={{
-              textDecoration: "none",
-              color: "inherit",
+            </MenuItem>
+          </Menu>
+
+          <Button
+            onClick={() => handleNavClick("/contact")}
+            sx={{
+              fontSize: "20px",
+              fontWeight: "bold",
+              color: { xs: "#1860b1fb", sm: "#CADCFC" },
+              textTransform: "none",
             }}
           >
-            <Button
-              sx={{
-                fontSize: "20px",
-                fontWeight: "bold",
-                color: { xs: "#1860b1fb", sm: "#CADCFC" },
-                textTransform: "none",
-              }}
-            >
-              {currentTranslations.contact}
-            </Button>
-          </Link>
+            {currentTranslations.contact}
+          </Button>
 
           <LanguageSelector />
         </Box>
       </Toolbar>
-
-      <Drawer
-        anchor="right"
-        open={drawerOpen}
-         onClose={toggleDrawer}
-      >
-        <Box
-          sx={{
-            width: "200px",
-            paddingTop: "60px",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            paddingLeft: "15px",
-          }}
-          role="presentation"
-        >
-          <List>
-            <ListItem sx={{ padding: "10px 0" }}>
-              <Link
-                to="/home"
-                style={{ textDecoration: "none", width: "100%" }}
-              >
-                <Button
-                  color="inherit"
-                  sx={{
-                    fontSize: "17px",
-                    fontWeight: "bold",
-                    justifyContent: "flex-start",
-                    textAlign: "left",
-                    width: "100%",
-                  }}
-                onClick={() => handleNavClick("/home")}
-
-                >
-                  {currentTranslations.home}
-                </Button>
-              </Link>
-            </ListItem>
-            <ListItem sx={{ padding: "10px 0" }}>
-              <Link
-                to="/about"
-                style={{ textDecoration: "none", width: "100%" }}
-              >
-                <Button
-                  color="inherit"
-                  sx={{
-                    fontSize: "17px",
-                    fontWeight: "bold",
-                    justifyContent: "flex-start",
-                    textAlign: "left",
-                    width: "100%",
-                  }}
-                  onClick={() => handleNavClick("/about")}
-
-                >
-                  {currentTranslations.about}
-                </Button>
-              </Link>
-            </ListItem>
-            <ListItem sx={{ padding: "10px 0" }}>
-              <Link
-                to="/careers"
-                style={{ textDecoration: "none", width: "100%" }}
-              >
-                <Button
-                  color="inherit"
-                  sx={{
-                    fontSize: "17px",
-                    fontWeight: "bold",
-                    justifyContent: "flex-start",
-                    textAlign: "left",
-                    width: "100%",
-                  }}
-                onClick={() => handleNavClick("/activities")}
-
-                >
-                  {currentTranslations.activities}
-                </Button>
-              </Link>
-            </ListItem>
-            <ListItem sx={{ padding: "10px 0" }}>
-              <Link
-                to="/contact"
-                style={{ textDecoration: "none", width: "100%" }}
-              >
-                <Button
-                  color="inherit"
-                  sx={{
-                    fontSize: "17px",
-                    fontWeight: "bold",
-                    justifyContent: "flex-start",
-                    textAlign: "left",
-                    width: "100%",
-                  }}
-                onClick={() => handleNavClick("/contact")}
-
-                >
-                  {currentTranslations.contact}
-                </Button>
-              </Link>
-            </ListItem>
-
-            <ListItem sx={{ padding: "5px 0" }}>
-              <Box sx={{ marginTop: "1px" }}>
-                <LanguageSelector />
-              </Box>
-            </ListItem>
-          </List>
-        </Box>
-      </Drawer>
     </AppBar>
   );
 }

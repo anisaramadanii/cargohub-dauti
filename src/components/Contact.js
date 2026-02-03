@@ -1231,7 +1231,7 @@ export default function Contact() {
                   fontSize: { xs: "16px", sm: "20px" },
                 }}
               >
-                edina@dauti-transhped.com.mk
+                hr@dauti-transhped.com.mk
               </Typography>
             </Paper>
           </Grid>

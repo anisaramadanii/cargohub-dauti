@@ -13,6 +13,9 @@ const translations = {
     gallery: "ГАЛЕРИЈА",
     contact: "КОНТАКТ",
     companyName: "Даути-ТранспортШпед",
+    services: "УСЛУГИ",
+    transport: "ТРАНСПОРТ",
+    spedition: "ШПЕДИЦИЈА",
 
     // Home page
     homeTitle: "Секогаш и насекаде, се приближуваме до вашиот бизнис…",
@@ -76,6 +79,21 @@ const translations = {
       "Грешка при испраќање на апликацијата. Обидете се повторно.",
 
     yourInformation: "Вашите информации",
+
+    //Transport
+    transportFleetTitle: "Нашата транспортна флота",
+    transportFleetDesc:
+      "Нашите транспортни услуги се изведуваат со модерен возен парк, технички опремен за превоз на различни видови стока. Истовремено, благодарение на нашиот стручен тим, обезбедуваме ефикасно царинско посредување, подготовка на потребна документација и професионално водење на целиот увозно-извозен и транзитен процес. Поседувањето сертификат за систем за управување согласно ISO 9001:2015 го потврдува нашиот континуиран фокус на квалитет, усогласеност и подобрување на услугите. Нашата цел е да обезбедиме комплетна логистичка услуга на едно место – транспарентна, навремена и прилагодена на потребите на клиентите. Визијата на Даути-Транспортшпед е долгорочен раст, проширување на пазарите и создавање силни партнерства засновани на професионалност и доверба. Даути-Транспортшпед – сигурен избор за транспорт и шпедиција.",
+
+    cmrInsurance: "Целосно CMR осигурување",
+    cmrInsuranceDesc: "Сигурно покритие за меѓународен и локален транспорт.",
+
+    europeanNetwork: "Европска мрежа",
+    europeanNetworkDesc:
+      "Долгорочна соработка со европски партнери за транспорт и логистика.",
+
+    trackingSupport: "Следење и поддршка",
+    trackingSupportDesc: "24/7 комуникација за брза реакција.",
   },
 
   AL: {
@@ -88,6 +106,9 @@ const translations = {
     gallery: "GALERI",
     contact: "KONTAKT",
     companyName: "Dauti-TransportShped",
+    services: "SHËRBIME",
+    transport: "TRANSPORT",
+    spedition: "SPEDICION",
 
     // Home page
     homeTitle: "Kudo, çdoherë, ne afrohemi pranë biznesit tuaj…",
@@ -127,7 +148,7 @@ const translations = {
     getInTouch: "Na kontaktoni",
     getInTouchDesc:
       "Ekipi ynë është këtu për t'ju ndihmuar. Mos hezitoni të na kontaktoni për çdo pyetje ose kërkesë.",
-    contactInfo: "Informacionet e kontaktit",
+    contactInfo: "Informacionet e Kontaktit",
     address: "Adresa",
     addressValue: "Shkup, Maqedoni",
     phoneLabel: "Telefon",
@@ -152,6 +173,21 @@ const translations = {
       "Gabim gjatë dërgimit të aplikimit. Ju lutemi provoni përsëri.",
 
     yourInformation: "Informacionet tuaja",
+
+    //Transport
+    transportFleetTitle: "Flota jonë e transportit",
+    transportFleetDesc:
+      "Shërbimet tona të transportit kryhen me një flotë moderne automjetesh, të pajisura teknikisht për transportin e llojeve të ndryshme të mallrave. Falë ekipit tonë profesional, ne sigurojmë ndërmjetësim të efektshëm doganor, përgatitjen e dokumentacionit të nevojshëm dhe menaxhimin profesional të të gjithë procesit të import-eksportit dhe tranzitit. Posedimi i Certifikatës për sistem menaxhimi sipas ISO 9001:2015 konfirmon fokusin tonë të vazhdueshëm në cilësi, përputhshmëri dhe përmirësim të shërbimeve. Qëllimi ynë është të ofrojmë një shërbim të plotë logjistik në një vend – transparent, në kohë dhe të përshtatur për nevojat e klientëve. Vizioni i Dauti-Transportshped është rritje afatgjatë, zgjerim në tregje dhe krijim partneritetesh të forta të bazuara në profesionalizëm dhe besim. Dauti-Transportshped – një zgjedhje e sigurt për transport dhe spedicioni.",
+
+    cmrInsurance: "Sigurim i plotë CMR",
+    cmrInsuranceDesc: "Mbulim i sigurt për transport ndërkombëtar dhe lokal.",
+
+    europeanNetwork: "Rrjet Evropian",
+    europeanNetworkDesc:
+      "Bashkëpunim afatgjatë me partnerë transporti dhe logjistike në Evropë.",
+
+    trackingSupport: "Gjurmim dhe mbështetje",
+    trackingSupportDesc: "Komunikim 24/7 për reagim të shpejtë.",
   },
 
   EN: {
@@ -164,6 +200,9 @@ const translations = {
     gallery: "GALLERY",
     contact: "CONTACT",
     companyName: "Dauti-TransportShped",
+    services: "SERVICES",
+    transport: "TRANSPORT",
+    spedition: "SPEDITION",
 
     // Home page
     homeTitle: "Everywhere, Everytime We move close to your Business...",
@@ -226,6 +265,22 @@ const translations = {
     applicationError: "Error sending application. Please try again.",
 
     yourInformation: "Your Information",
+
+    //Transport
+    transportFleetTitle: "Our Transport Fleet",
+    transportFleetDesc:
+      "Our transport services are carried out with a modern vehicle fleet, technically equipped for transporting various types of goods. At the same time, thanks to our professional team, we provide efficient customs brokerage, preparation of all necessary documentation, and professional management of the entire import, export, and transit process. Holding the ISO 9001:2015 Quality Management System Certificate confirms our continuous commitment to quality, compliance, and ongoing improvement of our services. Our goal is to deliver a complete logistics service in one place – transparent, timely, and tailored to the needs of our clients. The vision of Dauti-Transportshped is long-term growth, market expansion, and the creation of strong partnerships based on professionalism and trust. Dauti-Transportshped – a reliable choice for transport and freight forwarding.",
+
+    cmrInsurance: "Full CMR Insurance",
+    cmrInsuranceDesc:
+      "Reliable coverage for international and local transport.",
+
+    europeanNetwork: "European Network",
+    europeanNetworkDesc:
+      "Long-term collaboration with European transport and logistics partners.",
+
+    trackingSupport: "Tracking & Support",
+    trackingSupportDesc: "24/7 communication for fast and efficient response.",
   },
 };
 
