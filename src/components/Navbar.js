@@ -81,14 +81,14 @@ export default function Navbar() {
             </Link>
           </Typography>
 
-          {/* MOBILE MENU BUTTON */}
+
           <Box sx={{ display: { xs: "block", sm: "none" } }}>
             <IconButton edge="end" color="inherit" onClick={toggleDrawer}>
               <MenuIcon />
             </IconButton>
           </Box>
 
-          {/* DESKTOP MENU */}
+      
           <Box sx={{ display: { xs: "none", sm: "flex" }, justifyContent: "flex-end", alignItems: "center", gap: "20px", flexGrow: 1 }}>
             {[
               { label: currentTranslations.home, path: "/home" },
@@ -139,7 +139,7 @@ export default function Navbar() {
         </Toolbar>
       </AppBar>
 
-      {/* MOBILE DRAWER */}
+
       <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer}>
         <List sx={{ width: 250 }}>
           {[
@@ -187,8 +187,6 @@ export default function Navbar() {
               </ListItem>
             )
           )}
-
-          {/* LANGUAGE SELECTOR */}
           <ListItem>
             <LanguageSelector />
           </ListItem>

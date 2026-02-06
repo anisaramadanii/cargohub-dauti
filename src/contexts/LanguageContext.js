@@ -94,8 +94,59 @@ const translations = {
 
     trackingSupport: "Следење и поддршка",
     trackingSupportDesc: "24/7 комуникација за брза реакција.",
+
+    //Spedition
+    speditionTitle:
+      "Добредојдовте во Dauti-Transportshped AD – вашиот доверлив партнер во шпедиција. Брзо. Сигурно. Професионално.",
+    speditionText:
+      "Во меѓународната трговија, секој детаљ е важен. Затоа Dauti-Transportshped AD Скопје, поддржан од професионален тим составен од лиценцирани царински претставници, нуди брзо и квалитетно обработување на сите царински процедури. Ние го управуваме целиот процес на шпедиција со прецизност, од документација и растовар до координација на транзит и достава. Нашиот фокус е на доверливост, законска усогласеност и ефикасност, обезбедувајќи ги вашите стоки да поминат преку границите без пречки и да стигнат на дестинацијата безбедно, навремено и без непотребни компликации.",
+    branchesTitle: "Застапеност",
+    branches: [
+      "Подружница Терминал Илинден, Скопје",
+      "Подружница ГП Табановце, Куманово",
+      "Подружница ГП Блаце, Чучер Сандево",
+      "Подружница ГП Ќафасан, Струга",
+      "Подружница ГП Деве Баир, К.Паланка",
+      "Подружница ГП Богородица, Гевгелија",
+      "Подружница ТИРЗ Тетово",
+    ],
+
+    //Shpedicion2
+
+    speditionProcessTitle: "Процеси и услуги на шpedициските услуги",
+    speditionProcessSubtitle:
+      "Јасни и ефикасни решенија за секоја фаза од царинската постапка.",
+
+    serviceDocsTitle: "Царинска Документација",
+    serviceDocsText:
+      "Подготовка и поднесување на точни царински декларации и документи.",
+
+    serviceImportExportTitle: "Увоз и Извоз",
+    serviceImportExportText:
+      "Целосно управување со увоз, извоз, транзит и реекспорт.",
+
+    serviceCustomsTitle: "Царински Формалности",
+    serviceCustomsText:
+      "Професионална координација со царинските органи за брзо одобрување.",
+
+    serviceControlTitle: "Контрола и Проверка",
+    serviceControlText:
+      "Проверка на документацијата и стоката согласно прописите.",
+
+    serviceClassificationTitle: "Класификација на Стока",
+    serviceClassificationText:
+      "Стручна помош при правилна тарифна класификација.",
+
+    serviceCertificatesTitle: "Дозволи и Сертификати",
+    serviceCertificatesText:
+      "Помош при обезбедување на сите потребни дозволи и сертификати.",
+
+    serviceDisputesTitle: "Царински Спорови",
+    serviceDisputesText:
+      "Поддршка при царински спорови, жалби и управни постапки.",
   },
 
+  // AL dhe EN po i vendos direkt speditionTitle dhe speditionText
   AL: {
     home: "KRYEFAQJA",
     about: "RRETH NESH",
@@ -110,10 +161,8 @@ const translations = {
     transport: "TRANSPORT",
     spedition: "SPEDICION",
 
-    // Home page
     homeTitle: "Kudo, çdoherë, ne afrohemi pranë biznesit tuaj…",
 
-    // About page
     aboutTitle: "Rreth Dauti-Transport-Shped",
     aboutSubtitle:
       "Ne ofrojmë shërbime transporti dhe logjistike me standarde të larta për klientët tanë.",
@@ -134,7 +183,6 @@ const translations = {
     director2:
       "Si Administrator i Dauti-Transportshped AD, për mua është nder që prej vitit 2003 jemi partner i besueshëm në fushën e spedicioni, ndërmjetësimit doganor dhe transportit ndërkombëtar. Misioni ynë është i qartë – të mundësojmë lëvizje të sigurt, të shpejtë dhe efikase. Çdo klient e shohim si partner afatgjatë, ndërsa çdo sfidë si mundësi për përmirësim.",
 
-    // Careers page
     aboutMacedonia:
       "Dauti Transport Shped është kompania e parë e themeluar në Saraj, Maqedonia e Veriut, e cila arriti sukses të shpejtë falë profesionalizmit dhe shërbimeve të besueshme. Me kalimin e kohës, kompania u zgjerua jashtë kufijve shtetërorë, duke hapur degë edhe në vende të tjera, dhe u bë një emër i njohur në fushën e transportit dhe logjistikës. Sot, Dauti Transport Shped përfaqëson një simbol të përkushtimit, cilësisë dhe zhvillimit të vazhdueshëm.",
     aboutAlbania:
@@ -142,7 +190,6 @@ const translations = {
     aboutKroacia:
       "Dauti Transportšped d.o.o. është një kompani e besueshme dhe profesionale, e themeluar në vitin 2021 me seli në ul. Pavlinska 5, 42000 Varaždin, Kroaci, e specializuar në shërbime transporti dhe logjistike. Me përvojë të gjatë në industrinë e transportit, ne ofrojmë zgjidhje cilësore dhe të sigurta për të gjitha llojet e ngarkesave, si në tregun vendas, ashtu edhe në atë ndërkombëtar. Ekipi ynë i ekspertëve është i përkushtuar për dorëzime në kohë dhe kënaqësinë e klientëve, duke përdorur pajisje moderne dhe shërbime logjistike të personalizuara.",
 
-    // Contact page
     contactTitle: "Kontakti",
     contactSubtitle: "Na kontaktoni për të gjitha pyetjet dhe kërkesat tuaja",
     getInTouch: "Na kontaktoni",
@@ -174,7 +221,6 @@ const translations = {
 
     yourInformation: "Informacionet tuaja",
 
-    //Transport
     transportFleetTitle: "Flota jonë e transportit",
     transportFleetDesc:
       "Shërbimet tona të transportit kryhen me një flotë moderne automjetesh, të pajisura teknikisht për transportin e llojeve të ndryshme të mallrave. Falë ekipit tonë profesional, ne sigurojmë ndërmjetësim të efektshëm doganor, përgatitjen e dokumentacionit të nevojshëm dhe menaxhimin profesional të të gjithë procesit të import-eksportit dhe tranzitit. Posedimi i Certifikatës për sistem menaxhimi sipas ISO 9001:2015 konfirmon fokusin tonë të vazhdueshëm në cilësi, përputhshmëri dhe përmirësim të shërbimeve. Qëllimi ynë është të ofrojmë një shërbim të plotë logjistik në një vend – transparent, në kohë dhe të përshtatur për nevojat e klientëve. Vizioni i Dauti-Transportshped është rritje afatgjatë, zgjerim në tregje dhe krijim partneritetesh të forta të bazuara në profesionalizëm dhe besim. Dauti-Transportshped – një zgjedhje e sigurt për transport dhe spedicioni.",
@@ -188,6 +234,54 @@ const translations = {
 
     trackingSupport: "Gjurmim dhe mbështetje",
     trackingSupportDesc: "Komunikim 24/7 për reagim të shpejtë.",
+
+    speditionTitle:
+      "Mirë se vini në Dauti-Transportshped AD – partneri juaj i besueshëm në shpedicion. Shpejt. Sigurt. Profesional.",
+    speditionText:
+      "Në tregtinë ndërkombëtare, çdo detaj ka rëndësi. Prandaj Dauti-Transportshped AD Shkup, i mbështetur nga një ekip profesional i përbërë nga përfaqësues doganorë të licencuar, ofron përpunim të shpejtë dhe cilësor të të gjitha procedurave doganore. Ne menaxhojmë të gjithë procesin e shpedicionit me saktësi, nga dokumentacioni dhe zhdoganimi deri te koordinimi i transitit dhe dorëzimi. Fokusi ynë është besueshmëria, përputhshmëria ligjore dhe efikasiteti, duke siguruar që mallrat tuaja të kalojnë kufijtë pa pengesa dhe të mbërrijnë në destinacion në mënyrë të sigurt, në kohë dhe pa komplikime të panevojshme.",
+    branchesTitle: "Degët tona",
+    branches: [
+      "Terminali Ilinden, Shkup",
+      "G.P. Tabanovc, Kumanovë",
+      "G.P. Blace, Çucher Sandevo",
+      "G.P. Qafasan, Strugë",
+      "G.P. Deve Bair, K. Pallankë",
+      "G.P. Bogorodicë, Gevgelinë",
+      "TIRZ Tetovë",
+    ],
+    //Shpedicion2
+
+    speditionProcessTitle: "Proceset dhe Shërbimet e Shpedicionit",
+    speditionProcessSubtitle:
+      "Zgjidhje të qarta dhe efikase për çdo fazë të procesit doganor.",
+
+    serviceDocsTitle: "Dokumentacion Doganor",
+    serviceDocsText:
+      "Përgatitje dhe dorëzim i saktë i deklaratave dhe dokumenteve doganore.",
+
+    serviceImportExportTitle: "Import & Eksport",
+    serviceImportExportText:
+      "Menaxhim i plotë i importit, eksportit, tranzitit dhe ri-eksportit.",
+
+    serviceCustomsTitle: "Formalitete Doganore",
+    serviceCustomsText:
+      "Koordinim profesional me autoritetet doganore për zgjidhje të shpejtë.",
+
+    serviceControlTitle: "Kontroll dhe Verifikim",
+    serviceControlText:
+      "Kontroll i dokumentacionit dhe mallrave sipas rregulloreve ligjore.",
+
+    serviceClassificationTitle: "Klasifikim i Mallrave",
+    serviceClassificationText:
+      "Këshillim profesional për klasifikim tarifor të saktë.",
+
+    serviceCertificatesTitle: "Leje dhe Certifikata",
+    serviceCertificatesText:
+      "Ndihmë për sigurimin e lejeve dhe certifikatave të nevojshme.",
+
+    serviceDisputesTitle: "Spore Doganore",
+    serviceDisputesText:
+      "Mbështetje në ankesa, mosmarrëveshje dhe procedura administrative.",
   },
 
   EN: {
@@ -204,10 +298,8 @@ const translations = {
     transport: "TRANSPORT",
     spedition: "SPEDITION",
 
-    // Home page
     homeTitle: "Everywhere, Everytime We move close to your Business...",
 
-    // About page
     aboutTitle: "About Dauti-Transport-Shped",
     aboutSubtitle:
       "We offer transportation and logistics services with high standards for our clients.",
@@ -228,7 +320,6 @@ const translations = {
     director2:
       "As the Manager of Dauti-Transportshped AD, it is an honor for me that since 2003 we have been a reliable partner in the field of freight forwarding, customs brokerage, and international transport. Our mission is clear – to ensure safe, fast, and efficient movement. We see every client as a long-term partner, and every challenge as an opportunity for improvement.",
 
-    // Careers page
     aboutMacedonia:
       "Dauti Transport Shped is the first company established in Saraj, North Macedonia, which quickly achieved success thanks to its professionalism and reliable services. Over time, the company expanded beyond national borders, opening branches in other countries as well, and became a recognized name in the field of transport and logistics. Today, Dauti Transport Shped represents a symbol of dedication, quality, and continuous development.",
     aboutAlbania:
@@ -236,7 +327,6 @@ const translations = {
     aboutKroacia:
       "Dauti Transportšped d.o.o. is a reliable and professional company, founded in 2021 and headquartered at ul. Pavlinska 5, 42000 Varaždin, Croatia, specializing in transportation and logistics services. With extensive experience in the transport industry, we provide high-quality and secure solutions for all types of cargo, both domestically and internationally. Our team of experts is dedicated to timely deliveries and customer satisfaction, utilizing modern equipment and tailored logistics services.",
 
-    // Contact page
     contactTitle: "Contact",
     contactSubtitle: "Get in touch with us for all your questions and requests",
     getInTouch: "Get In Touch",
@@ -266,7 +356,6 @@ const translations = {
 
     yourInformation: "Your Information",
 
-    //Transport
     transportFleetTitle: "Our Transport Fleet",
     transportFleetDesc:
       "Our transport services are carried out with a modern vehicle fleet, technically equipped for transporting various types of goods. At the same time, thanks to our professional team, we provide efficient customs brokerage, preparation of all necessary documentation, and professional management of the entire import, export, and transit process. Holding the ISO 9001:2015 Quality Management System Certificate confirms our continuous commitment to quality, compliance, and ongoing improvement of our services. Our goal is to deliver a complete logistics service in one place – transparent, timely, and tailored to the needs of our clients. The vision of Dauti-Transportshped is long-term growth, market expansion, and the creation of strong partnerships based on professionalism and trust. Dauti-Transportshped – a reliable choice for transport and freight forwarding.",
@@ -281,6 +370,53 @@ const translations = {
 
     trackingSupport: "Tracking & Support",
     trackingSupportDesc: "24/7 communication for fast and efficient response.",
+
+    speditionTitle:
+      "Welcome to Dauti-Transportshped AD – your trusted partner in freight forwarding. Fast. Secure. Professional.",
+    speditionText:
+      "In international trade, every detail matters. That is why Dauti-Transportshped AD Skopje, supported by a skilled team of licensed customs representatives, provides fast and high-quality handling of all customs procedures. We manage the entire freight forwarding process with precision, from customs documentation and clearance to coordination of transit and delivery. Our focus is on reliability, compliance, and efficiency, ensuring that your goods move smoothly across borders and arrive at their destination safely, on time, and without unnecessary complications.",
+    branchesTitle: "Our Branches",
+    branches: [
+      "Ilinden Terminal, Skopje",
+      "G.P. Tabanovce, Kumanovo",
+      "G.P. Blace, Čučer-Sandevo",
+      "G.P. Qafasan, Struga",
+      "G.P. Deve Bair, K. Palanka",
+      "G.P. Bogorodica, Gevgelija",
+      "TIRZ Tetovo",
+    ],
+    //Shpedicion2
+    speditionProcessTitle: "Shipping Processes and Services",
+    speditionProcessSubtitle:
+      "Clear and efficient solutions for every stage of the customs process.",
+
+    serviceDocsTitle: "Customs Documentation",
+    serviceDocsText:
+      "Preparation and submission of accurate customs declarations and documents.",
+
+    serviceImportExportTitle: "Import & Export",
+    serviceImportExportText:
+      "Full management of import, export, transit and re-export operations.",
+
+    serviceCustomsTitle: "Customs Formalities",
+    serviceCustomsText:
+      "Professional coordination with customs authorities for fast clearance.",
+
+    serviceControlTitle: "Control & Verification",
+    serviceControlText:
+      "Verification of documentation and goods in compliance with regulations.",
+
+    serviceClassificationTitle: "Goods Classification",
+    serviceClassificationText:
+      "Professional consulting for correct tariff classification.",
+
+    serviceCertificatesTitle: "Permits & Certificates",
+    serviceCertificatesText:
+      "Assistance in obtaining all required permits and certificates.",
+
+    serviceDisputesTitle: "Customs Disputes",
+    serviceDisputesText:
+      "Support in customs disputes, appeals and administrative procedures.",
   },
 };
 
