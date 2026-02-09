@@ -43,7 +43,15 @@ export default function Navbar() {
   const handleServicesClose = () => setServicesAnchor(null);
 
   const LanguageSelector = () => (
-    <Box sx={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "16px", fontWeight: "bold" }}>
+    <Box
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        gap: "8px",
+        fontSize: "16px",
+        fontWeight: "bold",
+      }}
+    >
       {["MK", "AL", "EN"].map((lang, idx) => (
         <React.Fragment key={lang}>
           <Button
@@ -58,7 +66,15 @@ export default function Navbar() {
           >
             {lang}
           </Button>
-          {idx < 2 && <Box sx={{ width: "1px", height: "20px", backgroundColor: "#31589cff" }} />}
+          {idx < 2 && (
+            <Box
+              sx={{
+                width: "1px",
+                height: "20px",
+                backgroundColor: "#31589cff",
+              }}
+            />
+          )}
         </React.Fragment>
       ))}
     </Box>
@@ -66,21 +82,37 @@ export default function Navbar() {
 
   return (
     <>
-      <AppBar position="fixed" sx={{ backgroundColor: "#00246B", top: 0, width: "100%", zIndex: 1300 }}>
+      <AppBar
+        position="fixed"
+        sx={{ backgroundColor: "#00246B", top: 0, width: "100%", zIndex: 1300 }}
+      >
         <Toolbar>
           <Typography
             variant="h6"
-            sx={{ flexGrow: 1, whiteSpace: "nowrap", fontWeight: "bold", fontSize: { xs: "20px", sm: "30px" } }}
+            sx={{
+              flexGrow: 1,
+              whiteSpace: "nowrap",
+              fontWeight: "bold",
+              fontSize: { xs: "20px", sm: "30px" },
+            }}
           >
             <Link
               to="/"
-              style={{ textDecoration: "none", color: "#CADCFC", display: "flex", alignItems: "center" }}
+              style={{
+                textDecoration: "none",
+                color: "#CADCFC",
+                display: "flex",
+                alignItems: "center",
+              }}
             >
-              <img src={logo} alt="Company Logo" style={{ height: "55px", marginRight: "10px" }} />
+              <img
+                src={logo}
+                alt="Company Logo"
+                style={{ height: "55px", marginRight: "10px" }}
+              />
               {currentTranslations.companyName}
             </Link>
           </Typography>
-
 
           <Box sx={{ display: { xs: "block", sm: "none" } }}>
             <IconButton edge="end" color="inherit" onClick={toggleDrawer}>
@@ -88,16 +120,26 @@ export default function Navbar() {
             </IconButton>
           </Box>
 
-      
-          <Box sx={{ display: { xs: "none", sm: "flex" }, justifyContent: "flex-end", alignItems: "center", gap: "20px", flexGrow: 1 }}>
+          <Box
+            sx={{
+              display: { xs: "none", sm: "flex" },
+              justifyContent: "flex-end",
+              alignItems: "center",
+              gap: "20px",
+              flexGrow: 1,
+            }}
+          >
             {[
               { label: currentTranslations.home, path: "/home" },
               { label: currentTranslations.about, path: "/about" },
-              { label: currentTranslations.services, path: null, submenu: [
+              {
+                label: currentTranslations.services,
+                path: null,
+                submenu: [
                   { label: currentTranslations.transport, path: "/transport" },
                   { label: currentTranslations.spedition, path: "/spedition" },
                   { label: currentTranslations.activities, path: "/careers" },
-                ]
+                ],
               },
               { label: currentTranslations.contact, path: "/contact" },
             ].map((item) =>
@@ -106,7 +148,12 @@ export default function Navbar() {
                   <Button
                     onClick={handleServicesOpen}
                     endIcon={<KeyboardArrowDownIcon />}
-                    sx={{ fontSize: "20px", fontWeight: "bold", color: "#CADCFC", textTransform: "none" }}
+                    sx={{
+                      fontSize: "20px",
+                      fontWeight: "bold",
+                      color: "#CADCFC",
+                      textTransform: "none",
+                    }}
                   >
                     {item.label}
                   </Button>
@@ -114,10 +161,21 @@ export default function Navbar() {
                     anchorEl={servicesAnchor}
                     open={Boolean(servicesAnchor)}
                     onClose={handleServicesClose}
-                    PaperProps={{ sx: { backgroundColor: "#111", color: "#fff", mt: 1, px: 2 } }}
+                    PaperProps={{
+                      sx: {
+                        backgroundColor: "#111",
+                        color: "#fff",
+                        mt: 1,
+                        px: 2,
+                      },
+                    }}
                   >
                     {item.submenu.map((sub) => (
-                      <MenuItem key={sub.label} onClick={() => handleNavClick(sub.path)} sx={{ fontSize: "17px", fontWeight: "bold" }}>
+                      <MenuItem
+                        key={sub.label}
+                        onClick={() => handleNavClick(sub.path)}
+                        sx={{ fontSize: "17px", fontWeight: "bold" }}
+                      >
                         {sub.label}
                       </MenuItem>
                     ))}
@@ -127,11 +185,16 @@ export default function Navbar() {
                 <Button
                   key={item.label}
                   onClick={() => handleNavClick(item.path)}
-                  sx={{ fontSize: "20px", fontWeight: "bold", color: "#CADCFC", textTransform: "none" }}
+                  sx={{
+                    fontSize: "20px",
+                    fontWeight: "bold",
+                    color: "#CADCFC",
+                    textTransform: "none",
+                  }}
                 >
                   {item.label}
                 </Button>
-              )
+              ),
             )}
 
             <LanguageSelector />
@@ -139,17 +202,24 @@ export default function Navbar() {
         </Toolbar>
       </AppBar>
 
-
-      <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer}>
-        <List sx={{ width: 250 }}>
+      <Drawer
+        anchor="right"
+        open={drawerOpen}
+        onClose={toggleDrawer}
+        ModalProps={{ disableEnforceFocus: true }} // Kjo largon paralajmërimin
+      >
+        <List sx={{ width: 250, pt: 7 }}>
           {[
             { label: currentTranslations.home, path: "/home" },
             { label: currentTranslations.about, path: "/about" },
-            { label: currentTranslations.services, path: null, submenu: [
+            {
+              label: currentTranslations.services,
+              path: null,
+              submenu: [
                 { label: currentTranslations.transport, path: "/transport" },
                 { label: currentTranslations.spedition, path: "/spedition" },
                 { label: currentTranslations.activities, path: "/careers" },
-              ]
+              ],
             },
             { label: currentTranslations.contact, path: "/contact" },
           ].map((item) =>
@@ -158,6 +228,7 @@ export default function Navbar() {
                 <ListItem
                   component="button"
                   onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                  role="button"
                 >
                   <ListItemText primary={item.label} />
                   {mobileServicesOpen ? <ExpandLess /> : <ExpandMore />}
@@ -170,6 +241,7 @@ export default function Navbar() {
                         component="button"
                         sx={{ pl: 4 }}
                         onClick={() => handleNavClick(sub.path)}
+                        role="button"
                       >
                         <ListItemText primary={sub.label} />
                       </ListItem>
@@ -182,10 +254,11 @@ export default function Navbar() {
                 key={item.label}
                 component="button"
                 onClick={() => handleNavClick(item.path)}
+                role="button"
               >
                 <ListItemText primary={item.label} />
               </ListItem>
-            )
+            ),
           )}
           <ListItem>
             <LanguageSelector />

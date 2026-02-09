@@ -1122,7 +1122,9 @@ export default function Contact() {
                   mb: 2,
                   gap: 2,
                   flexWrap: "wrap",
-                  ml: 6,
+                  ml: { xs: 0, sm: 6 },
+                  justifyContent: { xs: "center", sm: "flex-start" },
+                  textAlign: { xs: "center", sm: "left" },
                 }}
               >
                 <Typography
@@ -1243,7 +1245,7 @@ export default function Contact() {
           onClick={() =>
             window.open(
               "https://www.facebook.com/search/top/?q=dauti%20transportshped",
-              "_blank"
+              "_blank",
             )
           }
         >
@@ -1255,7 +1257,7 @@ export default function Contact() {
           onClick={() =>
             window.open(
               " https://www.instagram.com/dauti.transportshped/?hl=en ",
-              "_blank"
+              "_blank",
             )
           }
         >
@@ -1266,7 +1268,7 @@ export default function Contact() {
           onClick={() =>
             window.open(
               "https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A101225650&keywords=dauti%20transportshped&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=947bb6bd-3010-48a9-beff-cac4e176c7b4&sid=0PN&spellCorrectionEnabled=true",
-              "_blank"
+              "_blank",
             )
           }
         >
