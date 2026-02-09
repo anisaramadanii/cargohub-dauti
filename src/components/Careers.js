@@ -18,6 +18,7 @@ function Careers() {
         flexDirection: "column",
         gap: 8,
         p: { xs: 2, md: 4 },
+        
       }}
     >
       {/* Maqedonia */}

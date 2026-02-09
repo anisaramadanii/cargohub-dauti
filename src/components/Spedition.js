@@ -17,12 +17,9 @@ export default function Spedition() {
 
   return (
     <Box sx={{ width: "100%", overflowX: "hidden" }}>
-      {/* CAROUSEL */}
       <Box>
         <ImageCarousel homeTitle={currentTranslations.homeTitle} />
       </Box>
-
-      {/* TEKST + FOTO */}
       <Box
         sx={{
           position: "relative",
@@ -37,7 +34,6 @@ export default function Spedition() {
           backgroundImage: `url(${background})`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
-          backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
           "&::before": {
             content: '""',
@@ -57,13 +53,25 @@ export default function Spedition() {
             display: "flex",
             flexDirection: { xs: "column", md: "row-reverse" },
             alignItems: "center",
-            gap: { xs: 4, md: 10 },
+            gap: { xs: 4, md: 6 },
             pr: { md: 4 },
           }}
         >
-          <Box sx={{ flex: 1, textAlign: { xs: "center", md: "left" } }}>
+          <Box
+            sx={{
+              flex: 1,
+              maxWidth: { xs: "520px", md: "100%" },
+              mx: { xs: "auto", md: 0 },
+              textAlign: { xs: "center", md: "left" },
+              px: { xs: 3, md: 8 },
+              py: 6,
+            }}
+          >
             <Typography variant="h5" fontWeight="bold" gutterBottom>
               {currentTranslations.speditionTitle}
+            </Typography>
+            <Typography variant="h5" fontWeight="bold" gutterBottom>
+              {currentTranslations.speditionTitle2}
             </Typography>
 
             <Typography sx={{ mb: 3, color: "#555", lineHeight: 1.7 }}>
@@ -85,7 +93,7 @@ export default function Spedition() {
               flex: 1,
               display: "flex",
               justifyContent: { xs: "center", md: "flex-end" },
-              pr: { md: 8 },
+              width: "100%",
             }}
           >
             <Box
@@ -93,19 +101,19 @@ export default function Spedition() {
               src={foto}
               alt="Shpedicion"
               sx={{
-                width: { xs: "100%", md: "100%" },
-                height: "auto",
+                width: { xs: "400px", md: "100%" },
                 maxWidth: "580px",
+                height: "auto",
                 borderRadius: "12px",
                 objectFit: "cover",
                 boxShadow: 3,
+                display: "block",
+                marginRight: "32px",
               }}
             />
           </Box>
         </Box>
       </Box>
-
-      {/* PROCESET / SHËRBIMET ME BACKGROUND */}
       <Box
         sx={{
           position: "relative",
@@ -120,7 +128,6 @@ export default function Spedition() {
           backgroundImage: `url(${background})`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
-          backgroundRepeat: "no-repeat",
           backgroundAttachment: "fixed",
           "&::before": {
             content: '""',
@@ -135,8 +142,12 @@ export default function Spedition() {
           sx={{
             position: "relative",
             zIndex: 2,
-            maxWidth: "1300px",
-            mx: "auto",
+            flex: 1,
+            maxWidth: { xs: "520px", md: "100%" },
+            mx: { xs: "auto", md: 0 },
+            textAlign: { xs: "center", md: "left" },
+            px: { xs: 3, md: 8 },
+            py: 6,
           }}
         >
           <Typography
@@ -162,6 +173,7 @@ export default function Spedition() {
                 xs: "1fr",
                 sm: "1fr 1fr",
                 md: "1fr 1fr 1fr",
+                marginRight:"26px"
               },
               gap: 4,
             }}

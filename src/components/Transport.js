@@ -14,8 +14,6 @@ export default function Transport() {
       <Box sx={{ width: "100%", overflowX: "hidden" }}>
         <ImageCarousel homeTitle={currentTranslations.homeTitle} />
       </Box>
-
-      {/* TEKST + FOTO */}
       <Box
         sx={{
           width: "100%",
@@ -38,7 +36,6 @@ export default function Transport() {
             gap: { xs: 4, md: 6 },
           }}
         >
-          {/* MAJTAS – TEKSTI */}
           <Box
             sx={{
               flex: 1,
@@ -79,8 +76,6 @@ export default function Transport() {
               desc={currentTranslations.trackingSupportDesc}
             />
           </Box>
-
-          {/* DJATHTAS – FOTO */}
           <Box
             sx={{
               flex: 1,
