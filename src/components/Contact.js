@@ -982,13 +982,13 @@ export default function Contact() {
                   mb: 1,
                 }}
               >
-                Гевгелија стоково царинење (4020)
+                Табановце стоково царинење (2030)
               </Typography>
               <Typography
                 variant="body1"
                 sx={{ fontSize: { xs: "15px", sm: "18px" } }}
               >
-                Gevgelija goods customs (4020)
+                Tabanovce goods customs (2030)
               </Typography>
             </Paper>
           </Grid>
@@ -1031,26 +1031,13 @@ export default function Contact() {
                 variant="body1"
                 sx={{
                   mb: 1,
-                  marginLeft: "25px",
-                  marginBottom: "20px",
-                  marginTop: "-15px",
-                  fontSize: { xs: "16px", sm: "20px" },
-                }}
-              >
-                +389 70 306 762
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  mb: 1,
                   marginLeft: "29px",
                   marginTop: "-18px",
                   fontSize: { xs: "16px", sm: "20px" },
                 }}
               >
-                034 230 225
+                +389 70 295-106
               </Typography>
-
               <Box sx={{ display: "flex", alignItems: "center", mt: 3 }}>
                 <Email
                   sx={{
@@ -1080,7 +1067,7 @@ export default function Contact() {
                   fontSize: { xs: "16px", sm: "20px" },
                 }}
               >
-                dautibogorodica@yahoo.com
+                dautitabanovce@dauti-transhped.com.mk
               </Typography>
             </Paper>
           </Grid>
@@ -1122,9 +1109,8 @@ export default function Contact() {
                   mb: 2,
                   gap: 2,
                   flexWrap: "wrap",
-                  ml: { xs: 0, sm: 6 },
-                  justifyContent: { xs: "center", sm: "flex-start" },
-                  textAlign: { xs: "center", sm: "left" },
+                  ml: { xs: 0 },
+                  justifyContent: { xs: "center", sm: "center" },
                 }}
               >
                 <Typography
