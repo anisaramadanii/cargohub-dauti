@@ -30,6 +30,7 @@ export default function Spedition() {
           justifyContent: "center",
           px: { xs: 2, md: 8 },
           py: 6,
+          boxSizing: "border-box",
           overflow: "hidden",
           backgroundImage: `url(${background})`,
           backgroundSize: "cover",
@@ -39,7 +40,7 @@ export default function Spedition() {
             content: '""',
             position: "absolute",
             inset: 0,
-            background: "rgba(0, 0, 0, 0.1)",
+            background: "rgba(0, 0, 0, 0.06)",
             zIndex: 1,
           },
         }}
@@ -102,13 +103,12 @@ export default function Spedition() {
               alt="Shpedicion"
               sx={{
                 width: { xs: "400px", md: "100%" },
-                maxWidth: "580px",
+                maxWidth: "540px",
                 height: "auto",
                 borderRadius: "12px",
                 objectFit: "cover",
                 boxShadow: 3,
                 display: "block",
-                marginRight: "32px",
               }}
             />
           </Box>
@@ -123,17 +123,18 @@ export default function Spedition() {
           alignItems: "center",
           justifyContent: "center",
           px: { xs: 2, md: 8 },
-          py: 6,
+          py: 2,
+          boxSizing: "border-box",
           overflow: "hidden",
           backgroundImage: `url(${background})`,
           backgroundSize: "cover",
-          backgroundPosition: "center center",
+          backgroundPosition: "center",
           backgroundAttachment: "fixed",
           "&::before": {
             content: '""',
             position: "absolute",
             inset: 0,
-            background: "rgba(0, 0, 0, 0.05)",
+            background: "rgba(0, 0, 0, 0.06)",
             zIndex: 1,
           },
         }}
@@ -173,7 +174,7 @@ export default function Spedition() {
                 xs: "1fr",
                 sm: "1fr 1fr",
                 md: "1fr 1fr 1fr",
-                marginRight:"26px"
+               
               },
               gap: 4,
             }}
