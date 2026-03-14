@@ -1,26 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-
    <url>
       <loc>https://www.dauti-transportshped.com.mk/</loc>
       <priority>1.0</priority>
    </url>
 
-  
    <url>
-      <loc>https://www.dauti-transportshped.com.mk/services</loc>
+      <loc>https://www.dauti-transportshped.com.mk/SERVICES</loc>
       <priority>0.8</priority>
    </url>
 
 
    <url>
-      <loc>https://www.dauti-transportshped.com.mk/contact</loc>
+      <loc>https://www.dauti-transportshped.com.mk/SERVICES/TRANSPORT</loc>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://www.dauti-transportshped.com.mk/SERVICES/SPEDITION</loc>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://www.dauti-transportshped.com.mk/SERVICES/GLOBAL PRESENCE</loc>
       <priority>0.8</priority>
    </url>
 
+   <url>
+      <loc>https://www.dauti-transportshped.com.mk/CONTACT</loc>
+      <priority>0.8</priority>
+   </url>
 
    <url>
-      <loc>https://www.dauti-transportshped.com.mk/about</loc>
+      <loc>https://www.dauti-transportshped.com.mk/ABOUT</loc>
       <priority>0.7</priority>
    </url>
 </urlset>
