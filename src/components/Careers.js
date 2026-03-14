@@ -5,6 +5,7 @@ import croatia from "../images/croatia-map.jpg";
 import macedonia from "../images/macedonia-map.jpg";
 import { useLanguage } from "../contexts/LanguageContext";
 import { useEffect } from "react";
+import background from "../images/background.jpg";
 
 function Careers() {
   const { currentTranslations } = useLanguage();
@@ -18,7 +19,19 @@ function Careers() {
         flexDirection: "column",
         gap: 8,
         p: { xs: 2, md: 4 },
-        
+        position: "relative",
+        overflow: "hidden",
+        backgroundImage: `url(${background})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center center",
+        backgroundAttachment: "fixed",
+        "&::before": {
+          content: '""',
+          position: "absolute",
+          inset: 0,
+          background: "rgba(0, 0, 0, 0.06)",
+          zIndex: 0,
+        },
       }}
     >
       {/* Maqedonia */}
@@ -29,6 +42,8 @@ function Careers() {
           alignItems: "center",
           gap: { xs: 3, md: 6 },
           mt: 8,
+          position: "relative",
+          zIndex: 1,
         }}
       >
         <Box
@@ -44,10 +59,11 @@ function Careers() {
         <Typography
           sx={{
             width: { xs: "100%", md: "60%" },
-            fontSize: "1.1rem",
+            fontSize: "1.3rem",
             lineHeight: 1.6,
             textAlign: { xs: "center", md: "left" },
             mt: { xs: 2, md: 0 },
+            fontStyle: "italic",
           }}
         >
           {currentTranslations.aboutMacedonia}
@@ -60,7 +76,11 @@ function Careers() {
           display: "flex",
           flexDirection: { xs: "column", md: "row-reverse" },
           alignItems: "center",
-          gap: { xs: 3, md: 4 },
+          gap: { xs: 2, md: 4 },
+          pt: 4,
+          mt: -12,
+          position: "relative",
+          zIndex: 1,
         }}
       >
         <Box
@@ -71,16 +91,18 @@ function Careers() {
             width: { xs: "80%", sm: "25%", md: "22%" },
             borderRadius: 3,
             boxShadow: 3,
+            height: "550px",
           }}
         />
         <Typography
           sx={{
             width: { xs: "100%", md: "60%" },
-            fontSize: "1.1rem",
+            fontSize: "1.3rem",
             lineHeight: 1.6,
             textAlign: { xs: "center", md: "left" },
             mt: { xs: 2, md: 0 },
             marginRight: { xs: 0, md: 10 },
+            fontStyle: "italic",
           }}
         >
           {currentTranslations.aboutAlbania}
@@ -95,6 +117,9 @@ function Careers() {
           alignItems: "center",
           gap: { xs: 3, md: 6 },
           pt: 4,
+          mt: -7,
+          position: "relative",
+          zIndex: 1,
         }}
       >
         <Box
@@ -110,10 +135,11 @@ function Careers() {
         <Typography
           sx={{
             width: { xs: "100%", md: "60%" },
-            fontSize: "1.1rem",
+            fontSize: "1.3rem",
             lineHeight: 1.6,
             textAlign: { xs: "center", md: "left" },
             mt: { xs: 2, md: 0 },
+            fontStyle: "italic",
           }}
         >
           {currentTranslations.aboutKroacia}

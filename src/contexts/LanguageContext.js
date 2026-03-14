@@ -114,7 +114,7 @@ const translations = {
 
     //Shpedicion2
 
-    speditionProcessTitle: "Процеси и услуги на шpedициските услуги",
+    speditionProcessTitle: "Процеси и услуги на шпедитерски услуги",
     speditionProcessSubtitle:
       "Јасни и ефикасни решенија за секоја фаза од царинската постапка.",
 
