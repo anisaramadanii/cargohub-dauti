@@ -147,7 +147,6 @@ const translations = {
       "Поддршка при царински спорови, жалби и управни постапки.",
   },
 
-  // AL dhe EN po i vendos direkt speditionTitle dhe speditionText
   AL: {
     home: "KRYEFAQJA",
     about: "RRETH NESH",
@@ -160,7 +159,7 @@ const translations = {
     companyName: "Dauti-TransportShped",
     services: "SHËRBIME",
     transport: "TRANSPORT",
-    spedition: "SPEDICION",
+    spedition: "SHPEDICIONI",
 
     homeTitle: "Kudo, çdoherë, ne afrohemi pranë biznesit tuaj…",
 
@@ -178,7 +177,7 @@ const translations = {
       "Ekipi ynë i dedikuar është i angazhuar për të ofruar mbështetje të jashtëzakonshme dhe zgjidhje të shpejta për klientët tanë. Ne japim prioritet kënaqësisë së klientit duke ofruar komunikim të qartë, duke adresuar shqetësimet në kohë dhe duke ofruar ndihmë të përshtatur për të plotësuar nevojat individuale. Me fokus në efikasitet dhe besueshmëri, ne sigurojmë që çdo klient të marrë vëmendjen dhe kujdesin që meriton, duke i ndihmuar ata të lundrojnë në çdo sfidë me lehtësi.",
     readMore: "Lexo më shumë",
     director:
-      "Si drejtor, më bën veçanërisht nder që t’ju prezantoj një kompani e cila ndër vite ka ndërtuar besim, siguri dhe profesionalizëm në fushën e transportit dhe spedicioni. Ekipi ynë profesional është i përkushtuar ndaj zgjidhjeve efikase, dorëzimit në kohë dhe mbështetjes së plotë për klientët dhe partnerët tanë. ",
+      "Si drejtor, më bën veçanërisht nder që t’ju prezantoj një kompani e cila ndër vite ka ndërtuar besim, siguri dhe profesionalizëm në fushën e transportit dhe shpedicionit. Ekipi ynë profesional është i përkushtuar ndaj zgjidhjeve efikase, dorëzimit në kohë dhe mbështetjes së plotë për klientët dhe partnerët tanë. ",
     thanks:
       "Ju falënderojmë që jeni pjesë e historisë sonë dhe jemi gjithmonë në dispozicion për bashkëpunim.",
     director2:
