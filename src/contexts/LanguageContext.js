@@ -181,14 +181,14 @@ const translations = {
     thanks:
       "Ju falënderojmë që jeni pjesë e historisë sonë dhe jemi gjithmonë në dispozicion për bashkëpunim.",
     director2:
-      "Si Administrator i Dauti-Transportshped AD, për mua është nder që prej vitit 2003 jemi partner i besueshëm në fushën e spedicioni, ndërmjetësimit doganor dhe transportit ndërkombëtar. Misioni ynë është i qartë – të mundësojmë lëvizje të sigurt, të shpejtë dhe efikase. Çdo klient e shohim si partner afatgjatë, ndërsa çdo sfidë si mundësi për përmirësim.",
+      "Si Administrator i Dauti-Transportshped AD, për mua është nder që prej vitit 2003 jemi partner i besueshëm në fushën e shpedicioni, ndërmjetësimit doganor dhe transportit ndërkombëtar. Misioni ynë është i qartë – të mundësojmë lëvizje të sigurt, të shpejtë dhe efikase. Çdo klient e shohim si partner afatgjatë, ndërsa çdo sfidë si mundësi për përmirësim.",
 
     aboutMacedonia:
       "Dauti Transport Shped është kompania e parë e themeluar në Saraj, Maqedonia e Veriut, e cila arriti sukses të shpejtë falë profesionalizmit dhe shërbimeve të besueshme. Me kalimin e kohës, kompania u zgjerua jashtë kufijve shtetërorë, duke hapur degë edhe në vende të tjera, dhe u bë një emër i njohur në fushën e transportit dhe logjistikës. Sot, Dauti Transport Shped përfaqëson një simbol të përkushtimit, cilësisë dhe zhvillimit të vazhdueshëm.",
     aboutAlbania:
       "Dauti Transportsped Sh.p.k. është një kompani transporti e sigurt dhe profesionale, e themeluar në vitin 2019 me seli në Zhafzotaj Vrrine, Durrës, Shqipëri. Me eksperiencë të gjatë në logjistikë dhe transport, ne ofrojmë shërbime cilësore për transportin e llojeve të ndryshme të ngarkesave, si në tregun vendas, ashtu edhe në atë ndërkombëtar. Ekipi ynë është i përkushtuar për dorëzime të sigurta dhe në kohë, të përshtatura sipas nevojave të çdo klienti. Ne përdorim pajisje dhe teknologji moderne për të siguruar efikasitet dhe siguri maksimale gjatë procesit të transportit. Qëllimi ynë është të ndërtojmë partneritete afatgjata përmes profesionalizmit dhe besueshmërisë.",
     aboutKroacia:
-      "Dauti Transportšped d.o.o. është një kompani e besueshme dhe profesionale, e themeluar në vitin 2021 me seli në ul. Pavlinska 5, 42000 Varaždin, Kroaci, e specializuar në shërbime transporti dhe logjistike. Me përvojë të gjatë në industrinë e transportit, ne ofrojmë zgjidhje cilësore dhe të sigurta për të gjitha llojet e ngarkesave, si në tregun vendas, ashtu edhe në atë ndërkombëtar. Ekipi ynë i ekspertëve është i përkushtuar për dorëzime në kohë dhe kënaqësinë e klientëve, duke përdorur pajisje moderne dhe shërbime logjistike të personalizuara.",
+      "Dauti Transportšped d.o.o. është një kompani e besueshme dhe profesionale, e themeluar në vitin 2021 me seli në ul. Pavlinska 5, 4200 Varaždin, Kroaci, e specializuar në shërbime transporti dhe logjistike. Me përvojë të gjatë në industrinë e transportit, ne ofrojmë zgjidhje cilësore dhe të sigurta për të gjitha llojet e ngarkesave, si në tregun vendas, ashtu edhe në atë ndërkombëtar. Ekipi ynë i ekspertëve është i përkushtuar për dorëzime në kohë dhe kënaqësinë e klientëve, duke përdorur pajisje moderne dhe shërbime logjistike të personalizuara.",
 
     contactTitle: "Kontakti",
     contactSubtitle: "Na kontaktoni për të gjitha pyetjet dhe kërkesat tuaja",
