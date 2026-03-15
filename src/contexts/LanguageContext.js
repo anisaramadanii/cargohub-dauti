@@ -181,7 +181,7 @@ const translations = {
     thanks:
       "Ju falënderojmë që jeni pjesë e historisë sonë dhe jemi gjithmonë në dispozicion për bashkëpunim.",
     director2:
-      "Si Administrator i Dauti-Transportshped AD, për mua është nder që prej vitit 2003 jemi partner i besueshëm në fushën e shpedicioni, ndërmjetësimit doganor dhe transportit ndërkombëtar. Misioni ynë është i qartë – të mundësojmë lëvizje të sigurt, të shpejtë dhe efikase. Çdo klient e shohim si partner afatgjatë, ndërsa çdo sfidë si mundësi për përmirësim.",
+      "Si Administrator i Dauti-Transportshped AD, për mua është nder që prej vitit 2003 jemi partner i besueshëm në fushën e shpedicionit, ndërmjetësimit doganor dhe transportit ndërkombëtar. Misioni ynë është i qartë – të mundësojmë lëvizje të sigurt, të shpejtë dhe efikase. Çdo klient e shohim si partner afatgjatë, ndërsa çdo sfidë si mundësi për përmirësim.",
 
     aboutMacedonia:
       "Dauti Transport Shped është kompania e parë e themeluar në Saraj, Maqedonia e Veriut, e cila arriti sukses të shpejtë falë profesionalizmit dhe shërbimeve të besueshme. Me kalimin e kohës, kompania u zgjerua jashtë kufijve shtetërorë, duke hapur degë edhe në vende të tjera, dhe u bë një emër i njohur në fushën e transportit dhe logjistikës. Sot, Dauti Transport Shped përfaqëson një simbol të përkushtimit, cilësisë dhe zhvillimit të vazhdueshëm.",
