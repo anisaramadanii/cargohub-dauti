@@ -20,7 +20,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import { useLanguage } from "../contexts/LanguageContext";
-import logo from "../images/logo.jpg";
+import logo from "../images/LOGO DAUTI TRANSPORSHPED.jpg";
 
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false);
